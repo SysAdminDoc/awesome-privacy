@@ -1,4 +1,8 @@
-## Research-Driven Additions
+# Roadmap
+
+Actionable work only. Historical and completed roadmap material is archived in CHANGELOG.md; blocked work is kept in Roadmap_Blocked.md.
+
+## Actionable Items
 
 - [ ] P0 - Repair README navigation and anchor integrity
   Why: Broken internal links make the directory harder to browse and signal stale curation.
@@ -6,13 +10,6 @@
   Touches: `README.md`.
   Acceptance: Contents links resolve locally for Dictation / ASR, VPNs, WebView, Others, Android subsections, and renamed/moved headings; markdown lint no longer reports MD042/MD051 anchor failures for the table of contents.
   Complexity: S
-
-- [ ] P0 - Triage dead and bot-blocked service links
-  Why: Readers use the list to choose privacy tools; dead project, dead demo, and dead documentation links can send them to abandoned or unsafe paths.
-  Evidence: `npx markdown-link-check README.md --quiet` reported 57 failures, including `commento.io`, `screenity.io/en`, `github.com/arnowelzel/periodical`, `git.sr.ht/~metalune/simpleweb_peertube`, `github.com/Metastem/wikiless`, and several `anonymousplanet.org` anchors.
-  Touches: `README.md`.
-  Acceptance: Each failed link is either fixed, replaced with a canonical upstream URL, marked as transient/bot-blocked with a durable source, or removed when the project/service is confirmed dead.
-  Complexity: M
 
 - [ ] P0 - Add a local validation section for maintainers
   Why: The repo has no build or test suite, so repeatable local checks are the only practical quality gate for list edits.
