@@ -22,6 +22,7 @@
 - [Analytics](#analytics)
 - [Android](#android)
   - [Android App Store](#android-app-store)
+  - [Alternative Google Play Store clients](#alternative-google-play-store-clients)
   - [Android Debloat Tools](#android-debloat-tools)
   - [Android Dialer](#android-dialer)
   - [Android File Manager](#android-file-manager)
@@ -29,16 +30,16 @@
   - [Android Keyboard](#android-keyboard)
   - [Android Launcher](#android-launcher)
 - [Artificial Intelligence](#artificial-intelligence)
-	- [ChatGPT](#chatgpt)
-	- [AI Coding](#ai-coding)
-	- [Text To Speech](#text-to-speech)
- 	- [Speech To Text](#speech-to-text)
-	- [Image Generation](#image-generation)
+  - [ChatGPT](#chatgpt)
+  - [AI Coding](#ai-coding)
+  - [Text to Speech](#text-to-speech)
+  - [Speech to Text](#speech-to-text)
+  - [Image Generation](#image-generation)
 - [Bookmarking](#bookmarking)
-    - [Book and web annotations](#book-and-web-annotationshighlights-management)
+  - [Book and Web Annotations](#book-and-web-annotations)
 - [Captchas](#captchas)
 - [Calendar](#calendar)
-- [Commenting Engines (disqus)](#commenting-engines)
+- [Commenting Engines](#commenting-engines)
 - [Cloaking](#cloaking)
 - [Cloud Storage](#cloud-storage)
 - [Creator Tools](#creator-tools)
@@ -47,7 +48,7 @@
 - [Design Tools](#design-tools)
 - [Developer Tools](#developer-tools)
     - [IDEs](#ides)
-- [Dictation / ASR]()
+- [Dictation / ASR](#speech-to-text)
 - [Domain Registrar](#domain-registrar)
 - [Download Manager](#download-manager)
 - [Encryption](#encryption)
@@ -80,18 +81,18 @@
 - [Office](#office)
 - [Online Phone Providers (SMS)](#online-phone-providers)
 - [Operating Systems](#operating-systems)
-    - [Android](#android)
-    - [PC / MacOS](#pc--macos)
-    - [Smart TV](#smart-tv)
+  - [Android Operating Systems](#android-operating-systems)
+  - [PC / MacOS](#pc--macos)
+  - [Smart TV](#smart-tv)
 - [Password Managers](#password-managers)
 - [Pastebin and Secret Sharing](#pastebin-and-secret-sharing)
 - [Payments](#payments)
 - [Personal Finances](#personal-finances)
-	- [Full Featured Financial Management](#full-featured-financial-management)
- 	- [Budget Management](#budget-management)
-  	- [Shared Expenses](#shared-expenses)
-	- [Others](#others)
- 	- [Portfolio Trackers](#portfolio-trackers)
+  - [Full Featured Financial Management](#full-featured-financial-management)
+  - [Budget Management](#budget-management)
+  - [Shared Expenses](#shared-expenses)
+  - [Others](#others)
+  - [Portfolio Trackers](#portfolio-trackers)
 - [Photo Editing and Management](#photo-editing-and-management)
 - [Photo Storage](#photo-storage)
 - [Privacy Tools](#privacy-tools)
@@ -117,11 +118,11 @@
 - [Version Control](#version-control)
 - [Video and Audio Conferencing](#video-and-audio-conferencing)
 - [Video Editing](#video-editing)
-- [Virtual Private Networks (VPNs)](#VPNS)
+- [Virtual Private Networks (VPNs)](#vpns)
 - [Web Browser](#web-browser)
-    - [Browser Addons](#browser-addons) 
-    - [Browser Sync](#browser-sync)
-    - [WebView](#webview)
+  - [Browser Addons](#browser-addons)
+  - [Browser Sync](#browser-sync)
+  - [WebView](#webview)
 
 ## 2FA
 ⛔ Avoid using apps that won't let you export your keys **easily**.
@@ -254,7 +255,7 @@ It allows users to easily create and browse group of apps and it displays notifi
 
 When using cloud-based AI services, the data you input is often collected and stored by the service provider. This may include not only the content of your requests but also metadata, such as timestamps or IP addresses. Third-party servers may grant access to your data to their employees, partners, or even other users, depending on their privacy policies. Data may be used for various purposes, including model training, research, or even marketing activities. Your requests to a third-party AI service may be tied to your user information and payment details, linking your data to your identity. 
 
-#### ChatGPT
+### ChatGPT
 
 - [Jan](https://github.com/janhq/jan) - Jan is an open source alternative to ChatGPT that runs 100% offline on your computer.
 - [llama.cpp](https://github.com/ggml-org/llama.cpp) - Inference of Facebook's LLaMA model in pure C/C++ so it can run locally on a CPU.
@@ -264,21 +265,21 @@ When using cloud-based AI services, the data you input is often collected and st
 - [Shimmy](https://github.com/Michael-A-Kuykendall/shimmy) - Privacy-focused AI inference server with OpenAI API compatibility, zero cloud dependencies, and local model processing.
 - [Tinfoil](https://tinfoil.sh/) - Verifiably private AI Chat and OpenAI-compatible inference in the cloud. Uses NVIDIA confidential computing and open source code pinned to a transparency log for end-to-end verifiability.
 
-#### AI Coding
+### AI Coding
 
 - [Continue](https://github.com/continuedev/continue) - Open-source autopilot for VS Code and JetBrains—the easiest way to code with any LLM
 - [Cline](https://cline.bot/) - Open source AI coding for VSCode. See every decision and use your own models. 
 	- [RooCode](https://github.com/RooCodeInc/Roo-Code) - Cline fork with some improvements.
 - [OpenCode](https://github.com/anomalyco/opencode/) - The open source coding agent. Connect local models or any providers of your choice.
 
-#### Text to Speech
+### Text to Speech
 
 - [Kokoro FastAPI](https://github.com/remsky/Kokoro-FastAPI) - Dockerized FastAPI wrapper for [Kokoro-82M](https://huggingface.co/hexgrad/Kokoro-82M) text-to-speech model w/CPU, ONNX and NVIDIA GPU support, handling, and auto-stitching.
 - [MeloTTS](https://github.com/myshell-ai/MeloTTS) - a high-quality multi-lingual text-to-speech library by MIT and MyShell.ai.
 - [Piper](https://github.com/rhasspy/piper) - A fast, local neural text to speech system that sounds great and is optimized for the Raspberry Pi 4.
 - [Espeak](https://github.com/espeak-ng/espeak-ng) - eSpeak NG is an open source speech synthesizer that supports more than hundred languages and accents. Voices will sound rather robotic.
 
-#### Speech to Text
+### Speech to Text
 
 - **Models**
 	- [Moonshine](https://github.com/moonshine-ai/moonshine) - Fast and accurate automatic speech recognition (ASR) for edge devices.
@@ -291,7 +292,7 @@ When using cloud-based AI services, the data you input is often collected and st
 	- [Sasayaki](https://github.com/pluja/sasayaki) - Tiny android dictation app that turns speech into clear writing.
 	- [Speaches](https://github.com/speaches-ai/speaches) - OpenAI API-compatible server supporting streaming transcription, translation, and speech generation.
 
-#### Image Generation
+### Image Generation
 
 - [ComfyUI](https://github.com/comfyanonymous/ComfyUI) - ComfyUI lets you execute advanced image generation pipelines using an advanced interface. Available on Windows, Linux, and macOS.
 - [Stable Diffusion Web UI](https://github.com/AUTOMATIC1111/stable-diffusion-webui) - A browser interface for Stable Diffusion and other models.
@@ -313,7 +314,7 @@ When using cloud-based AI services, the data you input is often collected and st
 - [Shiori](https://github.com/go-shiori/shiori)
 - [Wallabag](https://wallabag.org/) - Open-source, optionally self-hosted, read it later server. Provides paid hosted service with privacy in mind.
 
-### Book and web annotations/highlights management
+### Book and Web Annotations
 
 - [Blasta](https://git.xmpp-it.net/sch/Blasta) - A collaborative bookmarks manager for organizing online content.
 - [Hypothesis](https://github.com/hypothesis/h/) - Annotate the web, with anyone, anywhere.
@@ -825,12 +826,12 @@ With email aliases, you can finally create a different identity for each website
 - **SoundCloud** - [Dubitous priavcy policy](https://tosdr.org/en/service/276). Apps have [many trackers](https://reports.exodus-privacy.eu.org/en/reports/com.soundcloud.android/latest/). Way too many permissions are required for a streaming app.
 
 ✅  **Instead use**
-#### Video and Audio
+### Video and Audio
 - [Jellyfin](https://jellyfin.org/) - Jellyfin is the volunteer-built media solution that puts you in control of your media. Stream to any device from your own server, with no strings attached.
 - [Dim](https://github.com/Dusk-Labs/dim) - Dim is a self-hosted media manager. With minimal setup, Dim will organize and beautify your media collections, letting you access and play them anytime from anywhere.
 - [Stremio](https://www.stremio.com/) - Stremio is a modern media center that's a one-stop solution for your video entertainment.
 
-#### Audio
+### Audio
 - [Funkwhale](https://funkwhale.audio/) - A social platform to enjoy and share music (SoundCloud alternative).
 - [Subsonic](https://www.subsonic.org/pages/index.jsp) - Your complete, personal music streamer.
 - [Ampache](https://ampache.org/) - A web based audio/video streaming application and file manager.
@@ -863,7 +864,7 @@ With email aliases, you can finally create a different identity for each website
 **Deezer alternative clients**
 - [dzr](https://github.com/yne/dzr) - Command line Deezer player for Linux, BSD, Android+Termux
 
-#### Podcasts
+### Podcasts
 
 ⛔ **Avoid** 
 
@@ -965,7 +966,7 @@ Many websites require phone number verification. These services offer a way to r
 - [SmsPVA](https://smspva.com/) - SmsPVA is a service providing a phone number you can send any SMS on and get a text of it. (Based in France)
 
 ## Operating Systems
-### Android
+### Android Operating Systems
 ⛔ Try to avoid using Google Android or any Android that has been modified and tuned by any manufacturer such as Xiaomi, Huawei, Samsung, etc. Android is an Open Source project - [AOSP - Android Open Source Project](https://source.android.com/) - and it has many versions that will respect the user privacy and data and won't share it with private servers from manufacturers or service providers.
 
 ✅ **Instead use**
@@ -977,7 +978,7 @@ Many websites require phone number verification. These services offer a way to r
 > [!NOTE]
 > **Android security**: Custom ROMs can improve your privacy the same as they can decrease the Android security, always use ROMs that support verified boot and encryption and **DO NOT** have root enabled by default. If possible, don't use userdebug builds. If your threat model requires security, buy a Google Pixel and install GrapheneOS on it. [Read more on PrivacyGuides](https://www.privacyguides.org/android/overview).
 
-#### Android-Based
+#### Android-Based Operating Systems
 
 **GrapheneOS** has a strong focus on security and privacy. It deploys technologies to mitigate many vulnerabilities and makes exploiting of vulnerabilities substantially more difficult. It improves the security of both the OS and the apps running on it.
 
@@ -1126,7 +1127,7 @@ These tools are useful when sharing secrets, code snippets or any other kind of 
 - [Nextcloud Cospend](https://apps.nextcloud.com/apps/cospend) - A group/shared budget manager inspired by the great IHateMoney.
   - [MoneyBuster](https://gitlab.com/eneiluj/moneybuster/) - Android client for Nextcloud Cospend and IHateMoney servers.
 
-### Others 
+### Others
 
 - [Debitum](https://github.com/Marmo/debitum) - With Debitum you can track all kinds of IOUs, be it money or lent items.
 
@@ -1590,7 +1591,6 @@ Here are some open source and truly private (no personal data and/or credit card
 - [Brave](https://brave.com/) - Android/iOS. Brave offers a pretty good out-of-the-box set of privacy and tracker protections.
 - [Firefox](https://www.mozilla.org/en-US/firefox/mobile/) - Android/iOS
     - [🤖](#icons) [IronFox](https://gitlab.com/ironfox-oss/IronFox) - Mull browser fork. A hardened fork of Firefox for Android, with proprietary blobs removed.
-- [🤖](#icons) [Vanadium](https://vanadium.app/) - Privacy and security enhanced releases of Chromium by GrapheneOS.
 - [🤖](#icons) [Privacy Browser](https://www.stoutner.com/privacy-browser/)
 - [Tor Browser](https://www.torproject.org/) - iOS/Android. Defend yourself against tracking and surveillance and circumvent censorship.
 - [Cromite](https://www.cromite.org/) - Cromite is a Chromium fork based on Bromite with built-in support for ad blocking and an eye for privacy.
@@ -1623,6 +1623,10 @@ Please read about what the addon does before installing. If you don't understand
 
 ### Browser Sync
 - [xBrowserSync](https://www.xbrowsersync.org/) - Browser syncing as it should be: secure, anonymous and free!
+
+### WebView
+
+- [Vanadium](https://vanadium.app/) - Privacy and security enhanced Chromium releases by GrapheneOS, available as a browser and WebView provider on supported Android devices.
 
 [Back to top 🔝](#contents)
 
