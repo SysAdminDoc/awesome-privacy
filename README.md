@@ -171,16 +171,16 @@ There is no runtime, package-manager test suite, or build step for this reposito
 ## 2FA
 ⛔ Avoid using apps that won't let you export your keys **easily**.
 - Authy
-- Google Authenticator [![](https://shields.tosdr.org/en_217.svg)](https://tosdr.org/en/service/217)
+- Google Authenticator [![ToS;DR rating](https://shields.tosdr.org/en_217.svg)](https://tosdr.org/en/service/217)
 
 ✅ Instead use
-- [🤖](#icons) [Aegis](https://getaegis.app/) - A free, secure and open source app for Android to manage your 2-step verification tokens. Supports variety of imports from other apps (Google Authenticator, Authy etc.), vault encryption and exporting keys (plaintext or encrypted).
+- [Android](#icons) [Aegis](https://getaegis.app/) - A free, secure and open source app for Android to manage your 2-step verification tokens. Supports variety of imports from other apps (Google Authenticator, Authy etc.), vault encryption and exporting keys (plaintext or encrypted).
 - [ente Auth](https://ente.io/auth) - A free, cross platform, end-to-end encrypted and open source app for managing your 2-step verification tokens. From the makers of [ente Photos](https://ente.io), and uses the same battle tested infrastructure. Needs an ente.io account.
 - [Owky](https://github.com/charlietango/owky) - Free and Open Source Two-Factor Authenticator for IOS users.
-- [🤖](#icons) [FreeOTPPlus](https://github.com/helloworld1/FreeOTPPlus) - Enhanced fork of FreeOTP-Android providing a feature-rich 2FA authenticator.
-- [🤖](#icons) [Authenticator Pro](https://github.com/jamie-mh/AuthenticatorPro) - Two-Factor Authentication (2FA) client for Android + Wear OS.
+- [Android](#icons) [FreeOTPPlus](https://github.com/helloworld1/FreeOTPPlus) - Enhanced fork of FreeOTP-Android providing a feature-rich 2FA authenticator.
+- [Android](#icons) [Authenticator Pro](https://github.com/jamie-mh/AuthenticatorPro) - Two-Factor Authentication (2FA) client for Android + Wear OS.
 
-[Back to top 🔝](#contents)
+[Back to top](#contents)
 
 ## Analytics
 ⛔ Avoid any analytics service that comes from Google, Facebook, Microsoft or any private service. These kind of analytics hurt user privacy.
@@ -200,13 +200,13 @@ There is no runtime, package-manager test suite, or build step for this reposito
 - [Unidentified Analytics](https://unidentifiedanalytics.web.app/) - Naive ip-based tracking that works everywhere (web, command-line, email, etc). No account required. Developer friendly.
 - [Rybbit](https://rybbit.io) - Open-source and privacy-friendly alternative to Google Analytics that is 10x more intuitive.
 
-[Back to top 🔝](#contents)
+[Back to top](#contents)
 
 ## Android
 
 ### Android App Store
 ⛔ **Avoid**
-- Google Play Store [![](https://shields.tosdr.org/en_217.svg)](https://tosdr.org/en/service/217)
+- Google Play Store [![ToS;DR rating](https://shields.tosdr.org/en_217.svg)](https://tosdr.org/en/service/217)
 
 ✅  **Instead use**
 - [F-Droid](https://f-droid.org/) - F-Droid is an installable catalogue of FOSS (Free and Open Source Software) applications for the Android platform.
@@ -250,8 +250,8 @@ Preinstalled file managers and third-party file manager apps found on the play s
 
 ### Android Keyboard
 ⛔ **Avoid**
-- GBoard (Google) [![](https://shields.tosdr.org/en_217.svg)](https://tosdr.org/en/service/217)
-- SwiftKey [![](https://shields.tosdr.org/en_244.svg)](https://tosdr.org/en/service/244)
+- GBoard (Google) [![ToS;DR rating](https://shields.tosdr.org/en_217.svg)](https://tosdr.org/en/service/217)
+- SwiftKey [![ToS;DR rating](https://shields.tosdr.org/en_244.svg)](https://tosdr.org/en/service/244)
 
 ✅ **Instead use**
 - [AnySoftKeyboard](https://anysoftkeyboard.github.io/) - The only Android keyboard you'll ever need. Free as in speech and Free as in beer.
@@ -293,9 +293,11 @@ Third-party launchers found on the play store. They may contain ads/trackers and
 - [Bliss Launcher](https://f-droid.org/en/packages/foundation.e.blisslauncher/) - The default launcher of the /e/ Android-based OS.
 It allows users to easily create and browse group of apps and it displays notification badges on app icons.
 
-[Back to top 🔝](#contents)
+[Back to top](#contents)
 
 ## Artificial Intelligence
+
+> **Threat model:** Protect prompts, files, and identifiers from the AI provider and its partners. Local models reduce provider exposure but still require trusted devices, models, and dependencies; hosted services can retain metadata or content and are not anonymous by default.
 
 When using cloud-based AI services, the data you input is often collected and stored by the service provider. This may include not only the content of your requests but also metadata, such as timestamps or IP addresses. Third-party servers may grant access to your data to their employees, partners, or even other users, depending on their privacy policies. Data may be used for various purposes, including model training, research, or even marketing activities. Your requests to a third-party AI service may be tied to your user information and payment details, linking your data to your identity. 
 
@@ -303,11 +305,11 @@ When using cloud-based AI services, the data you input is often collected and st
 
 - [Jan](https://github.com/janhq/jan) - Jan is an open source alternative to ChatGPT that runs 100% offline on your computer.
 - [llama.cpp](https://github.com/ggml-org/llama.cpp) - Inference of Facebook's LLaMA model in pure C/C++ so it can run locally on a CPU.
-- [LocalAI](https://github.com/go-skynet/LocalAI) - Self-hosted, community-driven simple local OpenAI-compatible API written in go. Can be used as a drop-in replacement for OpenAI, running on CPU with consumer-grade hardware.
+- [LocalAI](https://github.com/go-skynet/LocalAI) [Self-hosted] - Self-hosted, community-driven simple local OpenAI-compatible API written in go. Can be used as a drop-in replacement for OpenAI, running on CPU with consumer-grade hardware.
 - [ollama](https://github.com/jmorganca/ollama) - Get up and running with Llama 2 and other large language models locally.
-- [PasteGuard](https://github.com/sgasser/pasteguard) - Privacy proxy for LLM APIs that masks PII and secrets before they reach cloud providers. Self-hosted, OpenAI-compatible, and restores original data in responses.
+- [PasteGuard](https://github.com/sgasser/pasteguard) [Self-hosted] - Privacy proxy for LLM APIs that masks PII and secrets before they reach cloud providers. Self-hosted, OpenAI-compatible, and restores original data in responses.
 - [Shimmy](https://github.com/Michael-A-Kuykendall/shimmy) - Privacy-focused AI inference server with OpenAI API compatibility, zero cloud dependencies, and local model processing.
-- [Tinfoil](https://tinfoil.sh/) - Verifiably private AI Chat and OpenAI-compatible inference in the cloud. Uses NVIDIA confidential computing and open source code pinned to a transparency log for end-to-end verifiability.
+- [Tinfoil](https://tinfoil.sh/) [Hosted] - Verifiably private AI Chat and OpenAI-compatible inference in the cloud. Uses NVIDIA confidential computing and open source code pinned to a transparency log for end-to-end verifiability.
 
 ### AI Coding
 
@@ -342,7 +344,7 @@ When using cloud-based AI services, the data you input is often collected and st
 - [Stable Diffusion Web UI](https://github.com/AUTOMATIC1111/stable-diffusion-webui) - A browser interface for Stable Diffusion and other models.
 - [InvokeAI](https://github.com/invoke-ai/InvokeAI) - Generate and create stunning visual media using the latest AI-driven technologies locally.
 
-[Back to top 🔝](#contents)
+[Back to top](#contents)
 
 ## Bookmarking
 ⛔ **Avoid**
@@ -364,22 +366,22 @@ When using cloud-based AI services, the data you input is often collected and st
 - [Hypothesis](https://github.com/hypothesis/h/) - Annotate the web, with anyone, anywhere.
 - [Kobuddy](https://github.com/karlicoss/kobuddy) - Get your Kobo e-reader device bookmarks and annotations in a .txt file.
 
-[Back to top 🔝](#contents)
+[Back to top](#contents)
 
 ## Captchas
 ⛔ **Avoid**
 
 Google captchas use cookies to track users and rank their IPs.
 
-- Google reCAPTCHA [![](https://shields.tosdr.org/en_217.svg)](https://tosdr.org/en/service/217)
-- hCaptcha [![](https://shields.tosdr.org/en_2207.svg)](https://tosdr.org/en/service/2207)
+- Google reCAPTCHA [![ToS;DR rating](https://shields.tosdr.org/en_217.svg)](https://tosdr.org/en/service/217)
+- hCaptcha [![ToS;DR rating](https://shields.tosdr.org/en_2207.svg)](https://tosdr.org/en/service/2207)
 
 ✅  **Instead use**
 - [Altcha.org](https://altcha.org) - Free, open-source and self-hosted CAPTCHA alternative using proof-of-work mechanism.
 - [mCaptcha](http://mcaptcha.org/) ([repo](https://github.com/mCaptcha/mCaptcha)) - An open-source CAPTCHA system with seamless UX.  mCaptcha uses SHA256 based proof-of-work (PoW) to rate limit users.
 - [Private Captcha](https://github.com/PrivateCaptcha/PrivateCaptcha) - Privacy-first and self-hosted Proof-of-Work CAPTCHA alternative, made in EU.
 
-[Back to top 🔝](#contents)
+[Back to top](#contents)
 
 ## Calendar
 
@@ -389,13 +391,13 @@ Google captchas use cookies to track users and rank their IPs.
 
 ✅  **Instead use**
 
-- [🤖](#icons) [Etar](https://github.com/Etar-Group/Etar-Calendar) - Open-source calendar app for Android that works with any CalDAV server.
-- [🤖](#icons) [Fossify Calendar](https://github.com/FossifyOrg/Calendar) - Simple offline calendar app for Android with widget support.
-- [🤖](#icons) [KashCal](https://github.com/KashCal/KashCal) - Offline-first Android calendar with iCloud/CalDAV sync, full-text search, recurring events, and home screen widget. Apache 2.0 licensed.
+- [Android](#icons) [Etar](https://github.com/Etar-Group/Etar-Calendar) - Open-source calendar app for Android that works with any CalDAV server.
+- [Android](#icons) [Fossify Calendar](https://github.com/FossifyOrg/Calendar) - Simple offline calendar app for Android with widget support.
+- [Android](#icons) [KashCal](https://github.com/KashCal/KashCal) - Offline-first Android calendar with iCloud/CalDAV sync, full-text search, recurring events, and home screen widget. Apache 2.0 licensed.
 - [Nextcloud Calendar](https://apps.nextcloud.com/apps/calendar) - Calendar app for Nextcloud with CalDAV support. Self-hostable.
 - [Proton Calendar](https://proton.me/calendar) - End-to-end encrypted calendar from Proton. Part of the Proton privacy ecosystem.
 
-[Back to top 🔝](#contents)
+[Back to top](#contents)
 
 ## Commenting Engines
 
@@ -405,14 +407,14 @@ Google captchas use cookies to track users and rank their IPs.
 
 ✅  **Instead use**
 
-- [Commento](https://commento.io/) - [💀](#icons) Commento is a fast, privacy-focused commenting platform. Can be selfhosted or use their SaaS.
+- [Commento](https://commento.io/) - [Inactive](#icons) Commento is a fast, privacy-focused commenting platform. Can be selfhosted or use their SaaS.
 - [Comentario](https://comentario.app) - Tiny, Privacy-focused, Open-source web comment engine, which adds discussion functionality to plain, boring web pages.
 - [Cusdis](https://github.com/djyde/cusdis) - Lightweight, privacy-friendly alternative to Disqus.
 - [Disgus](https://github.com/carlitoplatanito/disgus) - Embeddable comments for your website, backed by Nostr. Like Disqus but Nostr.
 - [Isso](https://github.com/posativ/isso) - A lightweight, self hosted, commenting server written in Python and JavaScript. It aims to be a drop-in replacement for Disqus.
 - [Remark42](https://remark42.com) - Self-hosted, lightweight, and simple (yet functional) comment engine, which doesn't spy on users.
 
-[Back to top 🔝](#contents)
+[Back to top](#contents)
 
 ## Cloaking
 ### Images
@@ -423,16 +425,19 @@ Google captchas use cookies to track users and rank their IPs.
 ### Text
 - [Stegcloak](https://stegcloak.surge.sh/) - Hide secrets with invisible characters in plain text securely using passwords ([repo](https://github.com/kurolabs/stegcloak)).
 
-[Back to top 🔝](#contents)
+[Back to top](#contents)
 
 ## Cloud Storage
+
+> **Threat model:** Protect files and metadata from provider access, account takeover, and accidental exposure. Client-side encryption and self-hosting change the trust boundary but do not remove endpoint, key-recovery, sharing, or server-administration risks.
+
 ⛔ **Avoid**
 - **Google Drive** - Google owned, so privacy policy is [very bad](https://tosdr.org/en/service/217). The data is stored in their remote servers where you lose control of it. They use trackers. No encryption available.
 - **DropBox** - [Bad privacy policy](https://tosdr.org/en/service/270). The app has [various trackers](https://reports.exodus-privacy.eu.org/en/reports/com.dropbox.android/latest/) and requires many permissions.
 - **OneDrive** - Microsoft owned, privacy policy is [very bad](https://tosdr.org/en/service/244). The data is stored in their remote servers where you lose control of it. They use trackers. No encryption available.
 
 ✅  **Instead use**
-- [Nextcloud](https://nextcloud.com/) - The open source self-hosted productivity platform that keeps you in control.
+- [Nextcloud](https://nextcloud.com/) [Self-hosted] - The open source self-hosted productivity platform that keeps you in control.
 - [Seafile](https://www.seafile.com/en/home/) - High performance file syncing and sharing. It includes a Wiki, WYSIWYG editing and other knowledge management features.
 - [Peergos](https://peergos.org/) - Secure and private space online where you can store, share and view your photos, videos, music and documents. Also includes a calendar, news feed, task lists, chat and email client. Open source and self-hostable.
 - [Proton Drive](https://proton.me/drive) - End-to-end encrypted Swiss vault for your files that protects your data. [Read this article over Climate activist arrest](https://protonmail.com/blog/climate-activist-arrest/).
@@ -444,7 +449,7 @@ Google captchas use cookies to track users and rank their IPs.
 - [Rclone](https://rclone.org/) - Rclone is a command line program to manage files on cloud storage. It is a feature rich alternative to cloud vendors' web storage interfaces and like the tools listed above enables encryption for encrypting files in the cloud.
 - [Restic](https://restic.net/) - Restic is also command line program to manage files on various cloud storage providers. Restic uses encryption by default. Few noteworthy features of restic include browsing through storage as git like snapshots at no extra storage cost, deduplication and significant savings through compression.
 
-[Back to top 🔝](#contents)
+[Back to top](#contents)
 
 ## Creator Tools
 
@@ -455,10 +460,10 @@ Opt for open-source and P2P alternatives that prioritize data privacy, eliminate
 - [OBS Studio](https://obsproject.com/) - Free and open source software for video recording and live streaming.
 - [Screenity](https://screenity.io/en/) - A screen recorder that's free, private, and friendly.
 
-[Back to top 🔝](#contents)
+[Back to top](#contents)
 
 ## Databases
-[![](https://shields.tosdr.org/en_217.svg)](https://tosdr.org/en/service/217)
+[![ToS;DR rating](https://shields.tosdr.org/en_217.svg)](https://tosdr.org/en/service/217)
 ⛔ Avoid using privative databases which you don't control such as Google Firebase.
 
 ✅ Instead use
@@ -467,7 +472,7 @@ Opt for open-source and P2P alternatives that prioritize data privacy, eliminate
 - [Pocketbase](https://pocketbase.io/) - Open Source backend in 1 file written in Go.
 - [CondensationDB](https://github.com/CondensationDB/Condensation) [Inactive] - Condensation is an open-source zero trust, distributed database enabling to build modern applications while ensuring data ownership and security.
 
-[Back to top 🔝](#contents)
+[Back to top](#contents)
 
 ## Developer Tools
 - [Beekeeper Studio](https://www.beekeeperstudio.io) - Open Source SQL Editor and Database Manager with a privacy commitment in their mission statement.
@@ -479,14 +484,14 @@ Opt for open-source and P2P alternatives that prioritize data privacy, eliminate
 - [Neovim](https://neovim.io/) - Hyperextensible Vim-based text editor.
 - [VSCodium](https://vscodium.com/) - Free/Libre Open Source Software Binaries of VSCode. Vscode source code is open source (MIT-licensed), but the product available for download (Visual Studio Code) is licensed under [this not-FLOSS license](https://code.visualstudio.com/license) and contains telemetry/tracking.
 
-[Back to top 🔝](#contents)
+[Back to top](#contents)
 
 ## Dating Apps
 
 Apps such as Tinder collect and sell your personal intimate information. Tinder in particular has been found to [charge users up to five times more for same service](https://foundation.mozilla.org/en/blog/new-research-tinders-opaque-unfair-pricing-algorithm-can-charge-users-up-to-five-times-more-for-same-service/), [extrapolate estimations on your intelligence and other psychometrics and sell it to third-parties](https://libreddit.kavin.rocks/r/privacy/comments/k7x4s7/tinder_extrapolates_estimations_on_your/), [it may know more about you than yourself](https://www.theguardian.com/technology/2017/sep/26/tinder-personal-data-dating-app-messages-hacked-sold), and many more bad things you can find on the internet.
 
 ⛔ **Avoid**
-- [![](https://shields.tosdr.org/en_462.svg)](https://tosdr.org/en/service/462)
+- [![ToS;DR rating](https://shields.tosdr.org/en_462.svg)](https://tosdr.org/en/service/462)
 - Grindr
 - Badoo
 - Lovoo
@@ -494,7 +499,7 @@ Apps such as Tinder collect and sell your personal intimate information. Tinder 
 ✅  **Instead use**
 - [Alovoa](https://alovoa.com/) - Free and open-source dating platform that respects your privacy.
 
-[Back to top 🔝](#contents)
+[Back to top](#contents)
 
 ## Design Tools
 
@@ -518,7 +523,7 @@ Apps such as Tinder collect and sell your personal intimate information. Tinder 
 ✅  **Instead use**
 - [Penpot](https://penpot.app/) - Penpot is an Open Source design and prototyping platform for product teams.
 
-[Back to top 🔝](#contents)
+[Back to top](#contents)
 
 ## Domain Registrar
 ⛔ Avoid using domain registrars who are privacy invasive. 
@@ -527,7 +532,7 @@ Apps such as Tinder collect and sell your personal intimate information. Tinder 
 - [OrangeWebsite](https://www.orangewebsite.com/)
 - [1984 Hosting](https://www.1984hosting.com/)
 
-[Back to top 🔝](#contents)
+[Back to top](#contents)
 
 ## Download Manager
 
@@ -537,7 +542,7 @@ Apps such as Tinder collect and sell your personal intimate information. Tinder 
 - [Xtreme Download Manager](https://github.com/subhra74/xdm) - Xtreme Download Manager (XDM) is a powerful tool to increase download speeds up to 500%, save streaming videos from YouTube, DailyMotion, Facebook, Vimeo, Google Video and 1000+ other websites, resume broken/dead downloads, schedule and convert downloads.
 - [axel](https://github.com/axel-download-accelerator/axel) - Lightweight CLI download accelerator. It supports HTTP, HTTPS, FTP and FTPS protocols.
 
-[Back to top 🔝](#contents)
+[Back to top](#contents)
 
 ## Encryption
 Remember: Without strong encryption, you will be spied on systematically by lots of people.
@@ -555,7 +560,7 @@ Remember: Without strong encryption, you will be spied on systematically by lots
 - [Cryptsetup](https://gitlab.com/cryptsetup/cryptsetup) - Full disk encryption for Linux. Cryptsetup is a utility used to conveniently set up disk encryption based
 on the DMCrypt kernel module.
 
-[Back to top 🔝](#contents)
+[Back to top](#contents)
 
 ## File Management and Sharing
 ⛔ **Avoid**
@@ -586,9 +591,12 @@ on the DMCrypt kernel module.
 - [Yopass](https://github.com/jhaals/yopass) - Secure sharing of secrets, passwords and files.
 - [scrt.link](https://scrt.link/file) - End-to-end encrypted file transfer. Up to 100GB and 30 days retention. Stored in Switzerland.
 
-[Back to top 🔝](#contents)
+[Back to top](#contents)
 
 ## Fitness and Health
+
+> **Threat model:** Protect health, location, and intimate-life data from vendors, advertisers, and unnecessary account providers. Local storage reduces server exposure but does not replace device encryption, backups, or careful sharing; these entries are not medical advice or a security guarantee.
+
 ⛔ Your health is a **very** important piece of your **private data** and you should care **a lot** about it. Also, health related data is among the most coveted. Please don't use apps from Google, Fitbit, Huawei, Xiaomi or any company that seeks the gathering of your personal data.
 
 If you need an app for **menstrual cycle tracking** please don't use any apps like Clue, Period Tracker, etc. Those cute pink apps are greedy for your menstrual cycle and intimate life data and will sell it for sure, protect your private life. Check the list below and you will find nice alternatives.
@@ -597,13 +605,13 @@ If you need an app for **menstrual cycle tracking** please don't use any apps li
 
 ### Fitness trackers
 
-- [🤖](#icons) [Fitotrack](https://codeberg.org/jannis/FitoTrack) - A privacy oriented fitness tracker for Android.
-- [🤖](#icons) [OpenTracks](https://github.com/OpenTracksApp/OpenTracks) - OpenTracks is a sport tracking application that completely respects your privacy.
-- [🤖](#icons) [Gadgetbridge](https://codeberg.org/Freeyourgadget/Gadgetbridge) - A free and cloudless replacement for your gadget vendors' closed source Android applications.
+- [Android](#icons) [Fitotrack](https://codeberg.org/jannis/FitoTrack) - A privacy oriented fitness tracker for Android.
+- [Android](#icons) [OpenTracks](https://github.com/OpenTracksApp/OpenTracks) - OpenTracks is a sport tracking application that completely respects your privacy.
+- [Android](#icons) [Gadgetbridge](https://codeberg.org/Freeyourgadget/Gadgetbridge) - A free and cloudless replacement for your gadget vendors' closed source Android applications.
 
 ### Workout planners
 
-- [wger](https://wger.de/en/software/features) - A free, open source, self-hosted web application that manages your exercises, workouts and nutrition.
+- [wger](https://wger.de/en/software/features) [Self-hosted] - A free, open source, self-hosted web application that manages your exercises, workouts and nutrition.
 - [workout.lol](https://github.com/Vincenius/workout-lol) - A small web application to create workouts based on your available equipment and the muscles you want to train that you can selfhost.
 
 ### Food
@@ -611,21 +619,21 @@ If you need an app for **menstrual cycle tracking** please don't use any apps li
     - [OFF Apps](https://world.openfoodfacts.org/open-food-facts-mobile-app)
 
 ### Menstrual cycle trackers
-- [🤖](#icons) [Bluemoon](https://gitlab.com/ngrob/bluemoon-android) - Open source, privacy friendly menstruation tracking app. Your period, your data!
-- [🤖](#icons) [Drip](https://dripapp.org/) - Menstrual cycle and fertility tracking. Everything you enter stays on your device.
+- [Android](#icons) [Bluemoon](https://gitlab.com/ngrob/bluemoon-android) - Open source, privacy friendly menstruation tracking app. Your period, your data!
+- [Android](#icons) [Drip](https://dripapp.org/) - Menstrual cycle and fertility tracking. Everything you enter stays on your device.
 - [Euki](https://eukiapp.org/) - The period tracker that doesn’t track you. 
-- [🤖](#icons) [log28](https://github.com/wildeyedskies/log28) - a (very) simple no-frills period tracker for Android.
-- [🤖](#icons) [Periodical](https://github.com/arnowelzel/periodical) - A calendar to track your menstruation and calculate possible fertile days
+- [Android](#icons) [log28](https://github.com/wildeyedskies/log28) - a (very) simple no-frills period tracker for Android.
+- [Android](#icons) [Periodical](https://github.com/arnowelzel/periodical) - A calendar to track your menstruation and calculate possible fertile days
 - [Poppy](https://poppy.usenostr.org) - Poppy is a private period tracker that runs in the browser. It stores data locally, and can sync and backup through Nostr relays without a Poppy server or account, all encrypted end to end.
 
 ### Medical health
-- [Fasten](https://github.com/fastenhealth/fasten-onprem) - Fasten is an open-source, self-hosted, personal/family electronic medical record aggregator, designed to integrate with 1000's of insurances/hospitals/clinics.
+- [Fasten](https://github.com/fastenhealth/fasten-onprem) [Self-hosted] - Fasten is an open-source, self-hosted, personal/family electronic medical record aggregator, designed to integrate with 1000's of insurances/hospitals/clinics.
 
-[Back to top 🔝](#contents)
+[Back to top](#contents)
 
 ## Fonts
 ⛔ **Avoid**
-- Google Fonts (no selfhosted) [![](https://shields.tosdr.org/en_217.svg)](https://tosdr.org/en/service/217)
+- Google Fonts (no selfhosted) [![ToS;DR rating](https://shields.tosdr.org/en_217.svg)](https://tosdr.org/en/service/217)
 
 ✅  **Instead use**
 ### Google Fonts Replacements
@@ -636,18 +644,18 @@ If you need an app for **menstrual cycle tracking** please don't use any apps li
 - [Velvetyne](https://www.velvetyne.fr/)
 - [OpenFoundry](https://open-foundry.com/)
 
-[Back to top 🔝](#contents)
+[Back to top](#contents)
 
 ## Forms
 ⛔ **Avoid**
-- Google Forms [![](https://shields.tosdr.org/en_217.svg)](https://tosdr.org/en/service/217)
+- Google Forms [![ToS;DR rating](https://shields.tosdr.org/en_217.svg)](https://tosdr.org/en/service/217)
 
 ✅  **Instead use**
 - [TypeBot](https://typebot.io) - Open-source conversational forms.
 - [CryptPad Forms](https://cryptpad.fr/form/) - Part of the Cryptpad end-to-end encrypted and open-source collaboration suite.
 - [FramaForms](https://framaforms.org/) - Design your online surveys easily while respecting your audience.
 
-[Back to top 🔝](#contents)
+[Back to top](#contents)
 
 ## Games
 
@@ -662,7 +670,7 @@ Nintendo [collects user data](https://libreddit.kavin.rocks/r/privacy/comments/q
 
 ### Minecraft
 
-[![](https://shields.tosdr.org/en_244.svg)](https://tosdr.org/en/service/244)
+[![ToS;DR rating](https://shields.tosdr.org/en_244.svg)](https://tosdr.org/en/service/244)
 
 The game is owned by Microsoft. If this is not enough, you need a Microsoft account to play Minecraft since March 11th, 2022. Microsoft locks accounts some time not long after account creation and [forces the user](https://github.com/MultiMC/Launcher/issues/4093) [to provide](https://libreddit.kavin.rocks/r/privacy/comments/e6x27o/microsoft_forcing_me_to_give_then_my_phone_number/) a **phone number**. See: [Minecraft FAQ](https://help.minecraft.net/hc/en-us/articles/360050865492-Minecraft-Java-Edition-Account-Migration-FAQ), [1](https://libreddit.kavin.rocks/r/Minecraft/comments/sl8pkv/how_can_my_friend_migrate_her_account_to/hvq2sv6/), [2](https://libreddit.kavin.rocks/r/privacy/comments/spcuj4/microsoft_is_going_to_attempt_to_move_everyone_on/)
 
@@ -693,7 +701,7 @@ Nintendo [collects user data](https://libreddit.kavin.rocks/r/privacy/comments/q
 
 - [Sonic Robo Blast 2](https://www.srb2.org/) - Sonic Robo Blast 2 is a 3D open-source Sonic the Hedgehog fangame built using a modified version of the Doom Legacy port of Doom.
 
-[Back to top 🔝](#contents)
+[Back to top](#contents)
 
 ## Home Assistants
 
@@ -701,27 +709,27 @@ Don't use Google Home or Alexa. Please don't. Don't gift them to anyone. They op
 
 Interesting articles: [1](https://www.theguardian.com/technology/2019/oct/09/alexa-are-you-invading-my-privacy-the-dark-side-of-our-voice-assistants), [2](https://www.theregister.com/2020/08/08/ai_in_brief/), [3](https://www.networkworld.com/article/3190176/virtual-assistants-hear-everything-so-watch-what-you-say-i-m-not-kidding.html), [4](https://www.democracynow.org/2017/1/4/privacy_advocates_warn_of_potential_surveillance), [5](https://www.mirror.co.uk/news/weird-news/woman-finds-amazon-thousands-recordings-25240984), [6](https://www.seattletimes.com/business/locked-down-lawyers-warned-alexa-is-hearing-confidential-calls/), [7](https://hide.me/en/blog/assistant-devices-are-a-privacy-nightmare/).
 
-- Google Home [![](https://shields.tosdr.org/en_217.svg)](https://tosdr.org/en/service/217)
-- Alexa [![](https://shields.tosdr.org/en_190.svg)](https://tosdr.org/en/service/190)
-- Cortana [![](https://shields.tosdr.org/en_244.svg)](https://tosdr.org/en/service/244)
-- Siri [![](https://shields.tosdr.org/en_158.svg)](https://tosdr.org/en/service/158)
+- Google Home [Hosted] [Tracking/telemetry] [![ToS;DR rating](https://shields.tosdr.org/en_217.svg)](https://tosdr.org/en/service/217)
+- Alexa [Hosted] [Tracking/telemetry] [![ToS;DR rating](https://shields.tosdr.org/en_190.svg)](https://tosdr.org/en/service/190)
+- Cortana [![ToS;DR rating](https://shields.tosdr.org/en_244.svg)](https://tosdr.org/en/service/244)
+- Siri [![ToS;DR rating](https://shields.tosdr.org/en_158.svg)](https://tosdr.org/en/service/158)
 
 ✅  **Instead use**
 - [Mycroft](https://mycroft.ai/) - The Private and Open Voice Assistant.
 - [Home Assistant](https://www.home-assistant.io/) - Open source home automation that puts local control and privacy first.
 
-[Back to top 🔝](#contents)
+[Back to top](#contents)
 
 ## Instant Messaging
 **Check out [this site](https://www.securemessagingapps.com/) for comparisons*.
 
 ⛔ **Avoid**
-- WhatsApp | [![](https://shields.tosdr.org/en_198.svg)](https://tosdr.org/en/service/198)
-- Instagram DM | [![](https://shields.tosdr.org/en_219.svg)](https://tosdr.org/en/service/219)
-- Facebook Messenger | [![](https://shields.tosdr.org/en_182.svg)](https://tosdr.org/en/service/182)
-- Skype | [![](https://shields.tosdr.org/en_244.svg)](https://tosdr.org/en/service/244)
-- Zoom | [![](https://shields.tosdr.org/en_2198.svg)](https://tosdr.org/en/service/2198)
-- Google Hangouts / Chat | [![](https://shields.tosdr.org/en_217.svg)](https://tosdr.org/en/service/217)
+- WhatsApp | [![ToS;DR rating](https://shields.tosdr.org/en_198.svg)](https://tosdr.org/en/service/198)
+- Instagram DM | [![ToS;DR rating](https://shields.tosdr.org/en_219.svg)](https://tosdr.org/en/service/219)
+- Facebook Messenger | [![ToS;DR rating](https://shields.tosdr.org/en_182.svg)](https://tosdr.org/en/service/182)
+- Skype | [![ToS;DR rating](https://shields.tosdr.org/en_244.svg)](https://tosdr.org/en/service/244)
+- Zoom | [![ToS;DR rating](https://shields.tosdr.org/en_2198.svg)](https://tosdr.org/en/service/2198)
+- Google Hangouts / Chat | [![ToS;DR rating](https://shields.tosdr.org/en_217.svg)](https://tosdr.org/en/service/217)
 
 ✅  **Instead use**
 
@@ -732,7 +740,7 @@ No single point of control or failure. A decentralized network operated by diffe
    - [Element](https://element.io/) - All-in-one secure chat app for teams, friends and organisations. Keeps conversations in your control, safe from data-mining and ads. End-to-end encryption.
    - [Cinny](https://cinny.in/) - A Matrix client focusing primarily on simple, elegant and secure interface. 
 - [Jabber / XMPP (Protocol)](https://xmpp.org/) - The universal and open messaging standard. Tried and tested. Independent. Privacy-focused. E2E encrypted.
-  - [🤖](#icons) [Conversations](https://conversations.im/) - Jabber/XMPP client for Android 4.0+ smartphones that has been optimized to provide a unique mobile experience.
+  - [Android](#icons) [Conversations](https://conversations.im/) - Jabber/XMPP client for Android 4.0+ smartphones that has been optimized to provide a unique mobile experience.
   - [AstraChat](https://astrachat.com/) - Another XMPP client.
 - [DeltaChat](https://delta.chat/) - Chat over encrypted e-mail.
 - [Session](https://getsession.org/) - Extreme focus on privacy and anonymity. Blockchain technology.
@@ -743,8 +751,8 @@ No single point of control or failure. A decentralized network operated by diffe
 The service is in charge of running the servers that allow users to communicate. Single point of failure and control, but still 100% safe and trustworthy if the protocols and code are open and audited.
 
 - [Threema](https://threema.ch/en) - The messenger that puts security and privacy first. Pay once, chat forever. No collection of user data. Open Source client.
-- [Signal](https://signal.org/) - Extreme focus on privacy, combined with all of the features you expect. Strong encryption by design. 100% Open Source.
-  - [🤖](#icons) [Molly](https://github.com/mollyim/mollyim-android) - Signal-compatible fork client with some security enhancements.
+- [Signal](https://signal.org/) [Account/phone/KYC] - Extreme focus on privacy, combined with all of the features you expect. Strong encryption by design. 100% Open Source; registration requires a phone number.
+  - [Android](#icons) [Molly](https://github.com/mollyim/mollyim-android) - Signal-compatible fork client with some security enhancements.
 
 ### P2P
 No servers involved. Everything goes directly from one peer to the other peer. No point of failure or control. The features are reduced because of the lack of server, messaging can be slower. Best option for critical chats.
@@ -754,7 +762,7 @@ No servers involved. Everything goes directly from one peer to the other peer. N
 - [Tinfoil Chat](https://github.com/maqp/tfc) - Onion-routed, endpoint secure messaging system.
 - [Berty](https://berty.tech/) - The privacy-first messaging app that works with or without internet access, cellular data or trust in the network.
 
-[Back to top 🔝](#contents)
+[Back to top](#contents)
 
 ## Link in Bio Tools
 
@@ -762,7 +770,7 @@ No servers involved. Everything goes directly from one peer to the other peer. N
 - [BioDrop](https://github.com/EddieHubCommunity/BioDrop) - Connect to your audience with a single link. Showcase the content you create and your projects in one place. Make it easier for people to find, follow and subscribe.
 - [LinkStack](https://linkstack.org/) - Self-hosted open-source Linktree alternative.
 
-[Back to top 🔝](#contents)
+[Back to top](#contents)
 
 ## Link Shorteners
 
@@ -777,14 +785,14 @@ No servers involved. Everything goes directly from one peer to the other peer. N
 - [Yourls](https://yourls.org/) -  Self hosted URL shortener in PHP.
 - [tnyr.me](https://tnyr.me) - A zero-trust URL shortener with paswordless end-to-end encryption.
 
-[Back to top 🔝](#contents)
+[Back to top](#contents)
 
 ## Location tracking
 
 ⛔ **Avoid**
 
-- Google location history [![](https://shields.tosdr.org/en_217.svg)](https://tosdr.org/en/service/217)
-- Google FindMyDevice [![](https://shields.tosdr.org/en_217.svg)](https://tosdr.org/en/service/217)
+- Google location history [![ToS;DR rating](https://shields.tosdr.org/en_217.svg)](https://tosdr.org/en/service/217)
+- Google FindMyDevice [![ToS;DR rating](https://shields.tosdr.org/en_217.svg)](https://tosdr.org/en/service/217)
 
 ✅  **Instead use**
 
@@ -798,7 +806,7 @@ No servers involved. Everything goes directly from one peer to the other peer. N
 - [Find My Device](https://gitlab.com/Nulide/findmydevice) - Find your Android Device via SMS.
 - [GPSlogger](https://github.com/mendhak/gpslogger) - Lightweight GPS Logging Application For Android. No servers, no internet. Saved to a simple file to local storage.
 
-[Back to top 🔝](#contents)
+[Back to top](#contents)
 
 ## Mail Services
 ⛔ **Avoid**
@@ -825,8 +833,8 @@ No servers involved. Everything goes directly from one peer to the other peer. N
 ### Clients
 
 #### Android / iOS
-- [🤖](#icons) [FairEmail](https://github.com/M66B/FairEmail) - Fully featured, open source, privacy friendly email app for Android.
-- [🤖](#icons) [K9](https://k9mail.app/) - Open Source Email App for Android.
+- [Android](#icons) [FairEmail](https://github.com/M66B/FairEmail) - Fully featured, open source, privacy friendly email app for Android.
+- [Android](#icons) [K9](https://k9mail.app/) - Open Source Email App for Android.
 
 #### Desktop
 - [Thunderbird](https://www.thunderbird.net) - A free customizable open source email client.
@@ -838,9 +846,12 @@ With email aliases, you can finally create a different identity for each website
 - [SimpleLogin](https://github.com/simple-login/app)
 - [AnonAddy](https://github.com/anonaddy/anonaddy)
 
-[Back to top 🔝](#contents)
+[Back to top](#contents)
 
 ## Maps and Navigation
+
+> **Threat model:** Protect precise location history from map providers, advertising networks, and compromised accounts. Offline maps reduce live-query exposure; routing, search, traffic, and synchronization can still disclose location to a provider or relay.
+
 ⛔ **Avoid**
 - Google Maps
 - Apple Maps
@@ -857,7 +868,7 @@ With email aliases, you can finally create a different identity for each website
 - [Organic Maps](https://organicmaps.app/) - Great offline maps for hikers and cyclists.
 - [CoMaps](https://www.comaps.app/) - A community-led free & open source maps app based on OSM
 
-[Back to top 🔝](#contents)
+[Back to top](#contents)
 
 ## Media Streaming Platforms
 ⛔ **Avoid**
@@ -882,7 +893,7 @@ With email aliases, you can finally create a different identity for each website
 - [Koel](https://koel.dev/) - a personal music streaming server that works.
 - [Nuclear](https://nuclearplayer.com/) - Modern music player focused on streaming from free sources.
 - [Navidrome](https://navidrome.org/) - Lightweight, fast and self-contained personal music streamer.
-- [🤖](#icons) [mucke](https://github.com/moritz-weber/mucke) - A music player for local files with unique custom playback options.
+- [Android](#icons) [mucke](https://github.com/moritz-weber/mucke) - A music player for local files with unique custom playback options.
 
 **Spotify alternative clients**
  > These clients, although will have less tracking, still DO NOT protect your privacy at all as you will still be streaming from Spotify servers from you own **premium (paid, identified)** account.
@@ -897,7 +908,7 @@ With email aliases, you can finally create a different identity for each website
 
 \* No premium required.
 
-- [🤖](#icons) [Blade Player](https://github.com/vhaudiquet/BladePlayer) - Open source Spotify client, works without premium.
+- [Android](#icons) [Blade Player](https://github.com/vhaudiquet/BladePlayer) - Open source Spotify client, works without premium.
 
 
 **Youtube Music alternative clients**
@@ -923,7 +934,7 @@ With email aliases, you can finally create a different identity for each website
 - [Castopod](https://castopod.org) - Self-host your podcasts with ease, keep control over what you create and talk to your audience without any middleman. Your podcast and your audience belong to you and you only. 
 - [Funkwhale](https://funkwhale.audio/) - A social platform to enjoy and share audio.
 
-[Back to top 🔝](#contents)
+[Back to top](#contents)
 
 ## Notes and Tasks
 ⛔ **Avoid** 
@@ -958,7 +969,7 @@ These providers offer apps and services filled with data trackers. Also, most of
 - [Vikunja](https://vikunja.io) - The open-source to-do app to organize your life.
 - [YankNote](https://github.com/purocean/yn) - A Hackable Markdown Note Application for Programmers.
 
-[Back to top 🔝](#contents)
+[Back to top](#contents)
 
 ## Music Recognition
 
@@ -975,13 +986,13 @@ These providers offer apps and services filled with data trackers. Also, most of
 - [SongRec](https://github.com/marin-m/SongRec) - An open-source Shazam client for Linux, written in Rust.
 - [SongID Telegram Bot](https://github.com/smcclennon/SongID) - A Telegram bot that can identify music in audio/video files you send it. 
 
-[Back to top 🔝](#contents)
+[Back to top](#contents)
 
 ## Office
 
 ⛔ **Avoid**
-- Microsoft Office [![](https://shields.tosdr.org/en_244.svg)](https://tosdr.org/en/service/244)
-- Google Docs [![](https://shields.tosdr.org/en_217.svg)](https://tosdr.org/en/service/217)
+- Microsoft Office [![ToS;DR rating](https://shields.tosdr.org/en_244.svg)](https://tosdr.org/en/service/244)
+- Google Docs [![ToS;DR rating](https://shields.tosdr.org/en_217.svg)](https://tosdr.org/en/service/217)
 
 ✅  **Instead use**
 - [LibreOffice](https://www.libreoffice.org/) - Free and open source offline office.
@@ -992,7 +1003,7 @@ These providers offer apps and services filled with data trackers. Also, most of
 	- [Ddocs](https://ddocs.new): privacy-enhancing alternative to google docs: onchain, end-to-end encrypted, and decentralized. 
  	- [dSheets](https://dsheets.new): decentralized alternative to Excel and Google Sheets.
 
-[Back to top 🔝](#contents)
+[Back to top](#contents)
 
 ## Online Phone Providers
 
@@ -1084,17 +1095,20 @@ GNU/Linux is a family of free (as in freedom and as in free beer) and open sourc
 - [ReactOS](https://reactos.org/) - ReactOS is an operating system able to run Windows software, Windows drivers that looks-like Windows and is free and open source.
 - [RedoxOS](https://www.redox-os.org/) - A WIP project aiming to provide a Unix-like Operating System written in Rust.
 
-[Back to top 🔝](#contents)
+[Back to top](#contents)
 
 ## Password Managers
+
+> **Threat model:** Protect credentials from malware, provider compromise, weak recovery, and accidental sharing. A manager's encryption claims do not protect an unlocked endpoint or a lost recovery factor; verify export, audit, sync, and hosting assumptions before migrating a vault.
+
 ⛔ **Avoid**
 - LastPass
 - Dashlane
 
 ✅  **Instead use**
 - [AliasVault](https://www.aliasvault.net) - An open source E2EE password & alias manager with a built-in email alias server
-- [Bitwarden](https://bitwarden.com) - An open source cloud based password manager.
-  - [vaultwarden](https://github.com/dani-garcia/vaultwarden/) - Unofficial Bitwarden compatible self-hosted server, formerly known as bitwarden_rs.
+- [Bitwarden](https://bitwarden.com) [Hosted] [Account required] - An open source cloud based password manager.
+  - [vaultwarden](https://github.com/dani-garcia/vaultwarden/) [Self-hosted] - Unofficial Bitwarden compatible self-hosted server, formerly known as bitwarden_rs.
 - [CarryPass](https://carrypass.net) - Zero-knowledge PWA password manager with deterministic generation, encrypted vaults, and team collaboration. ([Source](https://github.com/racz-zoltan/racz-zoltan.github.io)) `MIT`
 - [KeepassXC](https://keepassxc.org/) - Securely store passwords using industry standard encryption, no sync just storage.
   - [KeepassDX](https://www.keepassdx.com/) for Android.
@@ -1117,18 +1131,21 @@ These tools are useful when sharing secrets, code snippets or any other kind of 
 - [scrt.link](https://scrt.link) - Share a secret. End-to-end encrypted. Ephemeral. Open-source.
 - [dele-to](https://dele.to) - Open Source. Modern app to share sensitive credentials and secrets securely with client-side AES-256 encryption, zero-knowledge architecture, and automatic self-destruction.
 
-[Back to top 🔝](#contents)
+[Back to top](#contents)
 
 ## Payments
+
+> **Threat model:** Protect transaction history, balances, and identity from merchants, payment processors, exchanges, and account providers. Privacy-preserving payment methods can still expose counterparties, timing, network metadata, or legal obligations; pseudonymity is not anonymity.
+
 ⛔ **Avoid**
 - Visa / Mastercard
-- [![](https://shields.tosdr.org/en_230.svg)](https://tosdr.org/en/service/230)
+- [![ToS;DR rating](https://shields.tosdr.org/en_230.svg)](https://tosdr.org/en/service/230)
 - WeChat
 - _insertBigTechHere_Pay
 - Bank payments (wire, SEPA, etc)
 
 ✅  **Instead use**
-- [Monero](https://www.getmonero.org/) - Monero is cash for a connected world. It's fast, private, untraceable and secure.
+- [Monero](https://www.getmonero.org/) [No account required] - Monero is cash for a connected world. It's fast, private, untraceable and secure.
 - Cash - Use person-to-person payments using physical notes and coins.
 
 > [!WARNING]
@@ -1137,7 +1154,7 @@ These tools are useful when sharing secrets, code snippets or any other kind of 
 - [Sparrow Wallet](https://www.sparrowwallet.com/) - An open source, cross-platform desktop wallet that gives you many privacy-preserving spending tools.
 - [Wasabi Wallet](https://www.wasabiwallet.io/) - An open source, non-custodial, privacy-focused Bitcoin wallet available on Desktop.
 
-[Back to top 🔝](#contents)
+[Back to top](#contents)
 
 ## Personal Finances
 
@@ -1183,7 +1200,7 @@ These tools are useful when sharing secrets, code snippets or any other kind of 
 
 ## Photo Editing and Management
 ⛔ **Avoid**
-- [![](https://shields.tosdr.org/en_417.svg)](https://tosdr.org/en/service/417)
+- [![ToS;DR rating](https://shields.tosdr.org/en_417.svg)](https://tosdr.org/en/service/417)
 - VSCO
 
 ✅  **Instead use**
@@ -1204,11 +1221,11 @@ These tools are useful when sharing secrets, code snippets or any other kind of 
 - [Scrambled Exif](https://gitlab.com/juanitobananas/scrambled-exif) - Remove Exif data from pictures before sharing them.
 - [ImagePipe](https://codeberg.org/Starfish/Imagepipe) - Reduces image size and removes exif-tags when sharing images on android devices.
 
-[Back to top 🔝](#contents)
+[Back to top](#contents)
 
 ## Photo Storage
 ⛔ **Avoid**
-- Google Photos [![](https://shields.tosdr.org/en_217.svg)](https://tosdr.org/en/service/217)
+- Google Photos [![ToS;DR rating](https://shields.tosdr.org/en_217.svg)](https://tosdr.org/en/service/217)
     - [Google Photos Takeout Helper](https://github.com/TheLastGimbus/GooglePhotosTakeoutHelper) - Script that organizes the Google Takeout messy archive into one big chronological folder. Use this script to get out of Google Photos :).
 - Amazon Photos
 
@@ -1235,9 +1252,11 @@ These tools are useful when sharing secrets, code snippets or any other kind of 
 - [Photok](https://github.com/leonlatsch/Photok) - Photok is a free Photo-Safe. It stores your photos encrypted on your device and hides them from others.
 - [ImageGlass](https://imageglass.org/) - ImageGlass is a lightweight software application whose purpose is to help you view images in a clean and intuitive working environment. 
 
-[Back to top 🔝](#contents)
+[Back to top](#contents)
 
 ## Privacy Tools
+
+> **Threat model:** These tools help inspect or reduce application and network disclosure, but reports and blocklists are incomplete and can be bypassed. Treat their output as evidence for decisions, not proof that a device or app is private.
 
 This section is dedicated to some tools that may help users analyze the privacy status on their devices.
 
@@ -1254,7 +1273,7 @@ This section is dedicated to some tools that may help users analyze the privacy 
 - [Netguard](https://netguard.me/) - A simple way to block access to the internet per application.
 - [RethinkDNS + Firewall](https://github.com/celzero/rethink-app) - An open-source, no-root firewall and DNS changer, with anti-censorship capabilities for Android 6+.
 
-[Back to top 🔝](#contents)
+[Back to top](#contents)
 
 ## Remote Access and Control
 ⛔ **Avoid**
@@ -1268,16 +1287,18 @@ This section is dedicated to some tools that may help users analyze the privacy 
 - [UltraVNC](https://www.uvnc.com/) - UltraVNC is a powerful, easy to use and free - remote pc access softwares - that can display the screen of another computer (via internet or network) on your own screen.
 - [MeshCentral](https://meshcentral.com/) - The open source, multi-platform, self-hosted, feature packed web site for remote device management.
 
-[Back to top 🔝](#contents)
+[Back to top](#contents)
 
 ## Search Engines
 
+> **Threat model:** Protect search queries and identifying metadata from the search provider and advertisers. A proxy may shift trust to its operator, while a direct provider may retain queries; check logging, independent indexing, and account requirements rather than assuming “privacy” means anonymity.
+
 ⛔ **Avoid**
-- [![](https://shields.tosdr.org/en_217.svg)](https://tosdr.org/en/service/217)
-- [![](https://shields.tosdr.org/en_309.svg)](https://tosdr.org/en/service/309)
+- [![ToS;DR rating](https://shields.tosdr.org/en_217.svg)](https://tosdr.org/en/service/217)
+- [![ToS;DR rating](https://shields.tosdr.org/en_309.svg)](https://tosdr.org/en/service/309)
 - Bing
-- [![](https://shields.tosdr.org/en_860.svg)](https://tosdr.org/en/service/860)
-- [![](https://shields.tosdr.org/en_591.svg)](https://tosdr.org/en/service/591)
+- [![ToS;DR rating](https://shields.tosdr.org/en_860.svg)](https://tosdr.org/en/service/860)
+- [![ToS;DR rating](https://shields.tosdr.org/en_591.svg)](https://tosdr.org/en/service/591)
 
 ✅  **Instead use**
 - [Whoogle Search](https://github.com/benbusby/whoogle-search) - A self-hosted, ad-free, privacy-respecting Google metasearch engine.
@@ -1288,9 +1309,11 @@ This section is dedicated to some tools that may help users analyze the privacy 
 - [Brave Search](https://search.brave.com) - A privacy respecting search engine with [its own independent index](https://brave.com/search-independence/).
 - [Qwant](https://www.qwant.com/) - A zero tracking search engine made and hosted in France, EU.
 
-[Back to top 🔝](#contents)
+[Back to top](#contents)
 
 ## Social Networks and Platforms
+
+> **Threat model:** Protect identity, social graph, messages, and browsing metadata from platforms and advertisers. A federated service shifts trust to an instance operator; a frontend or client may hide browser details while the upstream platform, proxy, or instance can still observe requests and content.
 
 > [!NOTE]
 > **The fediverse**
@@ -1299,7 +1322,7 @@ This section is dedicated to some tools that may help users analyze the privacy 
 >
 > Ideally, we should all move to the fediverse and abandon the centralized and monopolized social networks that are now the most popular (Twitter, Reddit, Instagram...).
 >
-> All the apps compatible with the Fediverse (ActivityPub) are marked with a [🧩](#icons)
+> All the apps compatible with the Fediverse (ActivityPub) are marked with an [ActivityPub](#icons) marker.
 
 > [!NOTE]
 > **Alternative frontends and clients**
@@ -1320,26 +1343,26 @@ This section is dedicated to some tools that may help users analyze the privacy 
 - **Blogger** - Google owned, has google trackers and ads.
 
 ✅ **Alternatives:**
-- [Plume](https://github.com/Plume-org/Plume) [🧩](#icons) - Federated blogging application, thanks to ActivityPub.
-- [WriteFreely](https://writefreely.org/) [🧩](#icons) - An open source platform for building a writing space on the web.
+- [Plume](https://github.com/Plume-org/Plume) [ActivityPub](#icons) - Federated blogging application, thanks to ActivityPub.
+- [WriteFreely](https://writefreely.org/) [ActivityPub](#icons) - An open source platform for building a writing space on the web.
 
 ✅ **Alternative Medium frontends:**
 - [Scribe](https://git.sr.ht/~edwardloveall/scribe/) - Medium alternative forntend inspired by Invidious.
 
 ### Instagram
 
-[![](https://shields.tosdr.org/en_219.svg)](https://tosdr.org/en/service/219)
+[![ToS;DR rating](https://shields.tosdr.org/en_219.svg)](https://tosdr.org/en/service/219)
 
 ⛔ Don't use Instagram (or at least the official client). Instagram is a very privacy-invasive app with biased results and feeds based on user profiles, it is also used as a manipulation tool and has a lot of censorship going against free speech. Lastly, it has an addictive and toxic UI design.
 
 ✅ **Instead use**
 
 **Alternatives to Instagram**
-- [Pixelfed](https://pixelfed.org/) [🧩](#icons) - Decentralized, federated and Open Source alternative to Instagram with posts, videos, stories, tags, etc.
+- [Pixelfed](https://pixelfed.org/) [ActivityPub](#icons) - Decentralized, federated and Open Source alternative to Instagram with posts, videos, stories, tags, etc.
 
 ### LBRY and Odysee
 
-![](https://shields.tosdr.org/en_2391.svg)
+![ToS;DR rating](https://shields.tosdr.org/en_2391.svg)
 
 Odysee website contains some trackers and is a heavy site. You can use these alternatives to avoid trackers and have a more minimalistic and lightweight UI:
 
@@ -1350,48 +1373,48 @@ Odysee website contains some trackers and is a heavy site. You can use these alt
 ⛔ Quora's website has ads and trackers that are used to get your data which is then sold/shared to third parties. Their [privacy policy](https://tosdr.org/en/service/314) is bad.
 
 ✅ **Quora alternative frontends (web-based):**
-- [Quetre](https://github.com/zyachel/quetre) - Quetre is an alternative front-end to Quora. It enables you to see answers without ads, trackers, and other such bloat.
+- [Quetre](https://github.com/zyachel/quetre) [Frontend] [Hosted backend] - Quetre is an alternative front-end to Quora. It enables you to see answers without ads, trackers, and other such bloat; the selected instance remains a trust dependency.
 
 
 ### YouTube
 
-[![](https://shields.tosdr.org/en_274.svg)](https://tosdr.org/en/service/274)
+[![ToS;DR rating](https://shields.tosdr.org/en_274.svg)](https://tosdr.org/en/service/274)
 
 ⛔ Don't use YouTube (or at least the official client). YouTube is very privacy invasive, it generates a very accurate profile based on your interests. Also it is a [radicalization tool](https://www.pcmag.com/news/does-youtubes-algorithm-lead-to-radicalization) which shows [biased content to users](https://arxiv.org/pdf/1908.08313.pdf) in order to get more engagement and to get them to watch more and more content creating an [addiction](https://medium.com/dataseries/how-youtube-is-addictive-259d5c575883). It never shows you [alternative opinions](https://arxiv.org/pdf/1908.08313.pdf) to your ideology/bias. YouTube censors a lot. YouTube collects a LOT of your data: interests, free time, ideology, likes, dislikes, music taste, etc.
 
 ✅ **Instead use**
-- [Peertube](https://joinpeertube.org/en/) [🧩](#icons) - A free, open and decentralized alternative to video platforms.
+- [Peertube](https://joinpeertube.org/en/) [ActivityPub](#icons) - A free, open and decentralized alternative to video platforms.
     - [SimpleerTube](https://simpleertube.metalune.xyz/) - A simple frontend for PeerTube with SepiaSearch [Source](https://git.sr.ht/~metalune/simpleweb_peertube).
 - [Odysee](https://odysee.com/) - Odysee is a video platform backed by the creators of lbry and uses the lbry blockchain protocol.
 - [DTube](https://github.com/dtube/dtube) - A full-featured video sharing website, decentralized.
 
 ✅ **YouTube alternative frontends (web-based):**
-- [Invidious](https://github.com/iv-org/invidious) - Alternative and privacy respecting YouTube frontend.
-- [Piped](https://github.com/TeamPiped/Piped) - An alternative privacy-friendly YouTube frontend which is efficient by design.
-- [ViewTube](https://github.com/viewtube/viewtube-vue) - ViewTube is an alternative privacy-friendly YouTube frontend written in Vue.js
-- [Youtube-Local](https://github.com/user234683/youtube-local) - browser-based client for watching Youtube anonymously and with greater page performance.
+- [Invidious](https://github.com/iv-org/invidious) [Frontend] [Hosted backend] - Alternative and privacy respecting YouTube frontend. The selected instance remains a trust dependency.
+- [Piped](https://github.com/TeamPiped/Piped) [Frontend] [Hosted backend] - An alternative privacy-friendly YouTube frontend which is efficient by design. The selected instance remains a trust dependency.
+- [ViewTube](https://github.com/viewtube/viewtube-vue) [Frontend] [Hosted backend] - ViewTube is an alternative privacy-friendly YouTube frontend written in Vue.js. The selected instance remains a trust dependency.
+- [Youtube-Local](https://github.com/user234683/youtube-local) [Frontend] [Hosted backend] - Browser-based client for watching Youtube anonymously and with greater page performance; the upstream service and selected deployment remain trust dependencies.
 
 ✅ **YouTube alternative clients (apps):**
-- [🤖](#icons) [NewPipe](https://newpipe.net/) - Alternative Android YouTube app. No account needed, privacy respecting, no ads.
+- [Android](#icons) [NewPipe](https://newpipe.net/) - Alternative Android YouTube app. No account needed, privacy respecting, no ads.
     - [Tubular](https://github.com/polymorphicshade/Tubular) - A fork of NewPipe that implements SponsorBlock and ReturnYouTubeDislike. 
-- [🤖](#icons) [SkyTube](https://github.com/SkyTubeTeam/SkyTube) - Alternative Android YouTube app. No account needed, privacy respecting, no ads.
+- [Android](#icons) [SkyTube](https://github.com/SkyTubeTeam/SkyTube) - Alternative Android YouTube app. No account needed, privacy respecting, no ads.
 - [FreeTube](https://github.com/FreeTubeApp/FreeTube) - FreeTube is an open source desktop YouTube player built with privacy in mind. (Uses Local RSS API or Invidious for backend).
-- [🤖](#icons) [LibreTube](https://github.com/Libre-tube/LibreTube) - An alternative frontend for YouTube, for Android using Piped.
+- [Android](#icons) [LibreTube](https://github.com/Libre-tube/LibreTube) - An alternative frontend for YouTube, for Android using Piped.
 - [Yattee](https://github.com/yattee/yattee) - Alternative YouTube frontend for iOS, tvOS and macOS built with Invidious and Piped.
-- [🤖](#icons) [Clipious](https://github.com/lamarios/clipious) Invidious client for android
+- [Android](#icons) [Clipious](https://github.com/lamarios/clipious) Invidious client for android
 
 ### TikTok
 
-[![](https://shields.tosdr.org/en_1448.svg)](https://tosdr.org/en/service/1448)
+[![ToS;DR rating](https://shields.tosdr.org/en_1448.svg)](https://tosdr.org/en/service/1448)
 
 ⛔ Avoid using TikTok, it is a toxic-designed application that harms not only the user privacy but also user integrity. You can take a read on [these several posts](https://libreddit.kavin.rocks/r/privacy/search?q=tiktok&restrict_sr=on&sort=top&t=all).
 
 ✅ **TikTok alternative frontends (web-based):**
-- [ProxiTok](https://github.com/pablouser1/ProxiTok) - Open source alternative frontend for TikTok
+- [ProxiTok](https://github.com/pablouser1/ProxiTok) [Frontend] [Hosted backend] - Open source alternative frontend for TikTok; the selected instance remains a trust dependency.
 
 ### Twitter
 
-[![](https://shields.tosdr.org/en_195.svg)](https://tosdr.org/en/service/195)
+[![ToS;DR rating](https://shields.tosdr.org/en_195.svg)](https://tosdr.org/en/service/195)
 
 ⛔ Avoid using Twitter official app / website. It tracks users and creates user profiles based on what they follow, retweet and like. Twitter harms and violates user privacy with their policies [by default](https://www.eff.org/deeplinks/2017/05/how-opt-out-twitters-new-privacy-settings). 
 
@@ -1406,11 +1429,11 @@ Odysee website contains some trackers and is a heavy site. You can use these alt
 > [!NOTE]
 > **Federated social networks**: A federated social network isn't a single website like Twitter or Facebook, it's a network of thousands of communities operated by different organizations and individuals that provide a seamless social media experience.
 
-- [Mastodon](https://joinmastodon.org/) [🧩](#icons) - Free, federated microblogging social network built on open protocols.
+- [Mastodon](https://joinmastodon.org/) [ActivityPub](#icons) - Free, federated microblogging social network built on open protocols.
   - [Mastodon Apps](https://joinmastodon.org/apps) - List of Mastodon apps for Android, iOS, Web and Desktop.
-- [Pleroma](https://pleroma.social/) [🧩](#icons) - Pleroma is a free, federated social networking server built on open protocols.
+- [Pleroma](https://pleroma.social/) [ActivityPub](#icons) - Pleroma is a free, federated social networking server built on open protocols.
   - [Soapbox](https://gitlab.com/soapbox-pub/soapbox-fe) - A frontend for Pleroma with a focus on custom branding and ease of use.
-  - [🤖](#icons) [Husky](https://git.sr.ht/~captainepoch/husky) - Android client for Pleroma and Mastodon.
+  - [Android](#icons) [Husky](https://git.sr.ht/~captainepoch/husky) - Android client for Pleroma and Mastodon.
 
 #### Alternative Frontends
 - [Nitter](https://github.com/zedeus/nitter/wiki/Instances) - Nitter is a free and open source alternative Twitter front-end focused on privacy.
@@ -1420,14 +1443,14 @@ Odysee website contains some trackers and is a heavy site. You can use these alt
 
 ### Reddit
 
-[![](https://shields.tosdr.org/en_194.svg)](https://tosdr.org/en/service/194)
+[![ToS;DR rating](https://shields.tosdr.org/en_194.svg)](https://tosdr.org/en/service/194)
 
 ⛔ Try to avoid using Reddit or at least avoid their official clients as they are plenty of trackers, ads and share unnecessary user data with their servers.
 
 ✅ **Reddit alternatives:**
 - [Aether](https://getaether.net/) - Peer-to-peer ephemeral public communities.
-- [Kbin](https://github.com/ernestwisniewski/kbin) [🧩](#icons) - A reddit-like content aggregator and micro-blogging platform for the fediverse. 
-- [Lemmy](https://join.lemmy.ml/) [🧩](#icons) - A federated and open alternative to Reddit in Rust.
+- [Kbin](https://github.com/ernestwisniewski/kbin) [ActivityPub](#icons) - A reddit-like content aggregator and micro-blogging platform for the fediverse.
+- [Lemmy](https://join.lemmy.ml/) [ActivityPub](#icons) - A federated and open alternative to Reddit in Rust.
 - [SaidIt](https://saidit.net/) - Open source Reddit clone.
 
 ✅ **Privacy respecting Reddit clients:**
@@ -1436,7 +1459,7 @@ Odysee website contains some trackers and is a heavy site. You can use these alt
 
 ### Streaming Platforms (Twitch)
 
-[![](https://shields.tosdr.org/en_200.svg)](https://tosdr.org/en/service/200)
+[![ToS;DR rating](https://shields.tosdr.org/en_200.svg)](https://tosdr.org/en/service/200)
 
 ⛔  Avoid using platforms as Twitch, Patreon, YouTube as they are very privacy-invasive with your viewers (and you!). Instead, you can try using some self-hosted platforms that do take care of everyone's privacy.
 
@@ -1446,18 +1469,18 @@ Odysee website contains some trackers and is a heavy site. You can use these alt
 
 ### Wikipedia
 
-[![](https://shields.tosdr.org/en_265.svg)](https://tosdr.org/en/service/265)
+[![ToS;DR rating](https://shields.tosdr.org/en_265.svg)](https://tosdr.org/en/service/265)
 
 ⛔ Read more about the issue with Wikipedia on the [Wikiless manifesto](https://github.com/Metastem/wikiless#why-i-should-use-wikiless-instead-of-wikipedia).
 
 ✅ **Alternatives:**
 - [Wikiless](https://wikiless.whateveritworks.org/) - A maintained fork of the free open source alternative Wikipedia front-end focused on privacy [Source Code](https://github.com/Metastem/wikiless). (Original instance: [wikiless.org](https://wikiless.org/), Wikiless repository has been removed by Codeberg, [follow news here](https://orenom.fi/))
 
-[Back to top 🔝](#contents)
+[Back to top](#contents)
 
 ### Imgur
 
-[![](https://shields.tosdr.org/en_325.svg)](https://tosdr.org/en/service/325)
+[![ToS;DR rating](https://shields.tosdr.org/en_325.svg)](https://tosdr.org/en/service/325)
 
 ⛔ Imgur website is plenty of bloat, gifs, cookies, javascript and trackers.
 
@@ -1465,14 +1488,14 @@ Odysee website contains some trackers and is a heavy site. You can use these alt
 - [Imgin](https://git.voidnet.tech/kev/imgin) - A minimalist, tor-friendly, read-only Imgur proxy insipired by software like Invidious, Nitter, and Bibliogram.
 - [rimgo](https://codeberg.org/video-prize-ranch/rimgo#instances) - An alternative frontend for Imgur. Read-only, no-js, Based on rimgu and rewritten in Go.
 
-[Back to top 🔝](#contents)
+[Back to top](#contents)
 
 ## Teamworking Tools
 ⛔ **Avoid**
-- [![](https://shields.tosdr.org/en_206.svg)](https://tosdr.org/en/service/206)
-- Google Meet [![](https://shields.tosdr.org/en_217.svg)](https://tosdr.org/en/service/217)
-- Microsoft Teams [![](https://shields.tosdr.org/en_244.svg)](https://tosdr.org/en/service/244)
-- [![](https://shields.tosdr.org/en_536.svg)](https://tosdr.org/en/service/536)
+- [![ToS;DR rating](https://shields.tosdr.org/en_206.svg)](https://tosdr.org/en/service/206)
+- Google Meet [![ToS;DR rating](https://shields.tosdr.org/en_217.svg)](https://tosdr.org/en/service/217)
+- Microsoft Teams [![ToS;DR rating](https://shields.tosdr.org/en_244.svg)](https://tosdr.org/en/service/244)
+- [![ToS;DR rating](https://shields.tosdr.org/en_536.svg)](https://tosdr.org/en/service/536)
 
 ✅  **Instead use**
 - [Zulip](https://zulip.com/) - Chat for distributed teams.
@@ -1489,20 +1512,20 @@ Odysee website contains some trackers and is a heavy site. You can use these alt
 
 - [See this section for Discord mods and alternative clients](https://github.com/pluja/awesome-privacy/blob/main/README.md#alternative-clientsmodifications-of-discord)
 
-[Back to top 🔝](#contents)
+[Back to top](#contents)
 
 ## Screen recording
 
 - [Screenity](https://screenity.io/en/) - A powerful privacy-friendly screen recorder and annotation tool to make better videos for work, education, and more.
 - [OBS](https://obsproject.com/) - Free and open source software for video recording and live streaming.
 
-[Back to top 🔝](#contents)
+[Back to top](#contents)
 
 ## Translation
 ⛔ **Avoid**
-- Google Translate [![](https://shields.tosdr.org/en_217.svg)](https://tosdr.org/en/service/217)
+- Google Translate [![ToS;DR rating](https://shields.tosdr.org/en_217.svg)](https://tosdr.org/en/service/217)
 - DeepL
-- Bing Translator [![](https://shields.tosdr.org/en_244.svg)](https://tosdr.org/en/service/244)
+- Bing Translator [![ToS;DR rating](https://shields.tosdr.org/en_244.svg)](https://tosdr.org/en/service/244)
 
 ✅ **Text translation**
 - [Mozilla Translate](https://mozilla.github.io/translate/) - Open Source, runs model locally in your browser.
@@ -1516,7 +1539,7 @@ Odysee website contains some trackers and is a heavy site. You can use these alt
 - [Lingva](https://github.com/TheDavidDelta/lingva-translate) - Alternative front-end for Google Translate. [Demo](https://lingva.ml/).
 - [Simplytranslate](https://codeberg.org/ManeraKai/simplytranslate) - Alternative front-end for Google Translate and LibreTranslate. [Demo](https://simplytranslate.org/)
 
-[Back to top 🔝](#contents)
+[Back to top](#contents)
 
 ## Uncategorized
 - [Skymap](https://skymaponline.net/) - Open online planetarium program.
@@ -1524,18 +1547,18 @@ Odysee website contains some trackers and is a heavy site. You can use these alt
 - [Hetty](https://github.com/dstotijn/hetty) - Hetty is an HTTP toolkit for security research. It aims to be an open-source alternative to Burp Suite Pro.
 - [Visited](https://github.com/yuis-ice/visited) - Locally collect browsing history over browsers.
 
-[Back to top 🔝](#contents)
+[Back to top](#contents)
 
 ## Utilities
 - [Deskreen](https://github.com/pavlobu/deskreen) - Turn any device into a secondary screen for your computer.
 - [Loggit](https://loggit.net) - Simple and Encrypted Life Tracking & Logging.
 
-[Back to top 🔝](#contents)
+[Back to top](#contents)
 
 ## Version Control
 ⛔ **Avoid**
 
-- **Github** - [![](https://shields.tosdr.org/en_297.svg)](https://tosdr.org/en/service/297), although the privacy policy is not very bad, it is owned by Microsoft, and it's common knowledge that it uses the code it hosts to train AI models.
+- **Github** - [![ToS;DR rating](https://shields.tosdr.org/en_297.svg)](https://tosdr.org/en/service/297), although the privacy policy is not very bad, it is owned by Microsoft, and it's common knowledge that it uses the code it hosts to train AI models.
 
 ✅  **Instead use**
 - [Codeberg](https://codeberg.org/) -  Codeberg is a collaboration platform providing Git hosting and services for free and open source software, content and projects. 
@@ -1543,7 +1566,7 @@ Odysee website contains some trackers and is a heavy site. You can use these alt
 - [GitLab](https://about.gitlab.com/) - GitLab a DevOps software package that can develop, secure, and operate software.
 - [Radicle](https://radicle.xyz/) - An open source, peer-to-peer code collaboration stack built on Git. Unlike centralized code hosting platforms, there is no single entity controlling the network. Repositories are replicated across peers in a decentralized manner, and users are in full control of their data and workflow.
 
-[Back to top 🔝](#contents)
+[Back to top](#contents)
 
 ## Video and Audio Conferencing
 ⛔ **Avoid**
@@ -1578,13 +1601,13 @@ Odysee website contains some trackers and is a heavy site. You can use these alt
 - [Kernel](https://github.com/kernel-mod/electron) - A super small and fast Electron client mod with the most capability, also you need to install a [Discord Utilities](https://github.com/slow/discord-utilities) package to block trackers.
 - [Replugged](https://replugged.dev/) - A continuation of the deprecated client mod [Powercord](https://powercord.dev).
 - [WebCord](https://github.com/SpacingBat3/WebCord) - A Discord and Fosscord API-less client made with the Electron.
-- [🤖](#icons) [Aliucord](https://github.com/Aliucord/Aliucord) - A modification for the Android Discord app that fully [disables the Discord Tracking](https://github.com/Aliucord/Aliucord/blob/main/Aliucord/src/main/java/com/aliucord/coreplugins/NoTrack.java).
+- [Android](#icons) [Aliucord](https://github.com/Aliucord/Aliucord) - A modification for the Android Discord app that fully [disables the Discord Tracking](https://github.com/Aliucord/Aliucord/blob/main/Aliucord/src/main/java/com/aliucord/coreplugins/NoTrack.java).
 
-[Back to top 🔝](#contents)
+[Back to top](#contents)
 
 ## Video Editing
 ⛔ **Avoid**
-- [![](https://shields.tosdr.org/en_417.svg)](https://tosdr.org/en/service/417)
+- [![ToS;DR rating](https://shields.tosdr.org/en_417.svg)](https://tosdr.org/en/service/417)
 - Sony Vegas
 - DaVinci Resolve
 
@@ -1598,30 +1621,34 @@ Such programs come filled with trackers and telemetry. You can get a full list o
 - [OpenCut](https://github.com/OpenCut-app/OpenCut) - [beta] A free, open-source video editor for web, desktop, and mobile.
 - [Shotcut](https://www.shotcut.org/) - Shotcut is a free, open source and simple cross-platform video editor.
 
-[Back to top 🔝](#contents)
+[Back to top](#contents)
 
 ## VPNs
+
+> **Threat model:** A VPN can hide traffic destinations from the local network or ISP while shifting trust to the VPN operator, which can observe connection metadata. It does not prevent browser fingerprinting, logged-in tracking, endpoint compromise, or identity exposure from payment and account records.
 
 ⛔ **Avoid**
 
 - [Free VPNs](https://techcrunch.com/2020/09/24/free-vpn-bad-for-privacy/) from Google Play or any appstore. These services are not free as they will suck your connections' data, keep logs and profile you to [sell your data to advertisers](https://thenextweb.com/news/be-cautious-free-vpns-are-selling-your-data-to-3rd-parties). If a government wants to track someone, such apps will be the first ones to fall.
 
-- Closed source VPN apps such as Surfshark or NordVPN may be less trustworthy as nobody can be sure how they handle your data. Also, paying with Credit Card will get you identified on the payment. Furthermore, if you need to give your email it will also identify you if this same email has been used in other services.
+- [Closed source] [Account/phone/KYC] Closed source VPN apps such as Surfshark or NordVPN may be less trustworthy as nobody can be sure how they handle your data. Paying with a credit card or reusing an email can also identify you.
 
 
 ✅  **Instead use**
 
 Here are some open source and truly private (no personal data and/or credit card needed) options:
 
-- [IVPN](https://ivpn.net)
-- [LNVPN](https://lnvpn.net)
-- [Mullvad VPN](https://mullvad.net)
-- [Proton VPN](https://protonvpn.com)
-- [SPN](https://safing.io/)
+- [IVPN](https://ivpn.net) [Hosted]
+- [LNVPN](https://lnvpn.net) [Hosted]
+- [Mullvad VPN](https://mullvad.net) [Hosted]
+- [Proton VPN](https://protonvpn.com) [Hosted]
+- [SPN](https://safing.io/) [Hosted]
 
-[Back to top 🔝](#contents)
+[Back to top](#contents)
 
 ## Web Browser
+
+> **Threat model:** Browser hardening can reduce third-party tracking and provider calls, but it cannot make a logged-in session anonymous or protect a compromised device. Privacy depends on defaults, extensions, update provenance, fingerprinting resistance, and the sites or sync providers you use.
 
 ⛔ **Avoid**
 
@@ -1634,8 +1661,8 @@ Here are some open source and truly private (no personal data and/or credit card
 #### Android / iOS
 - [Brave](https://brave.com/) - Android/iOS. Brave offers a pretty good out-of-the-box set of privacy and tracker protections.
 - [Firefox](https://www.mozilla.org/en-US/firefox/mobile/) - Android/iOS
-    - [🤖](#icons) [IronFox](https://gitlab.com/ironfox-oss/IronFox) - Mull browser fork. A hardened fork of Firefox for Android, with proprietary blobs removed.
-- [🤖](#icons) [Privacy Browser](https://www.stoutner.com/privacy-browser/)
+    - [Android](#icons) [IronFox](https://gitlab.com/ironfox-oss/IronFox) - Mull browser fork. A hardened fork of Firefox for Android, with proprietary blobs removed.
+- [Android](#icons) [Privacy Browser](https://www.stoutner.com/privacy-browser/)
 - [Tor Browser](https://www.torproject.org/) - iOS/Android. Defend yourself against tracking and surveillance and circumvent censorship.
 - [Cromite](https://www.cromite.org/) - Cromite is a Chromium fork based on Bromite with built-in support for ad blocking and an eye for privacy.
 
@@ -1650,7 +1677,7 @@ Here are some open source and truly private (no personal data and/or credit card
 > [!TIP]
 > It may be interesting to learn what you can do to harden your browser. You can follow this [Hitchhiker’s Guide to Online Anonymity](https://anonymousplanet.org/guide.html#appendix-v1-hardening-your-browsers) section to do it. Please, if you don't understand what you are doing, don't do it as you may be causing more harm than good to your privacy.
 
-[Back to top 🔝](#contents)
+[Back to top](#contents)
 
 ### Browser Addons
 
@@ -1672,7 +1699,7 @@ Please read about what the addon does before installing. If you don't understand
 
 - [Vanadium](https://vanadium.app/) - Privacy and security enhanced Chromium releases by GrapheneOS, available as a browser and WebView provider on supported Android devices.
 
-[Back to top 🔝](#contents)
+[Back to top](#contents)
 
 ## Privacy vs Security vs Anonymity
 
@@ -1690,17 +1717,21 @@ Privacy and anonymity are also not necessarily linked, services like Signal offe
 
 Finally, there are services that may offer all three: anonymity, privacy, and security. The primary focus of this list is to provide alternatives that prioritize privacy. These alternatives give you control over your data and do not collect or sell it.
 
-[Back to top 🔝](#contents)
+[Back to top](#contents)
 
 ## Icons
 
-Certainly! Here's the formatted table:
+| Marker | Meaning |
+|--------|---------|
+| `[Inactive]` (💀) | Caution: development appears inactive for a long time. Investigate before use. |
+| `[Fork]` (♻️) | The software is an independently maintained fork of another project. |
+| `[ActivityPub]` (🧩) | The software uses ActivityPub, a decentralized social networking protocol. |
+| `[Android]` (🤖) | Android-only entry. |
+| `[Hosted]` | The core workflow depends on a provider-controlled service or deployment. |
+| `[Frontend]` | A client or frontend depends on an upstream service; instance/operator trust still matters. |
+| `[Tracking/telemetry]` | Documented tracking, ads, analytics, crash reporting, or telemetry needs review. |
+| `[Closed source]` | A material client, server, or dependency is not source-available for inspection. |
+| `[Account/phone/KYC]` | The key workflow requires an account, phone number, payment identity, or identity verification. |
+| `[Self-hosted]` | The user must operate or arrange a server, storage, updates, and recovery process. |
 
-| Icon | Meaning |
-|-------|---------|
-| 💀    | Caution: The development of this service seems to be inactive for a long time. Maybe the project is abandoned. Investigate before use. |
-| ♻️    | The software is a fork: someone has made a copy of the original project (a fork) and started developing it further independently. |
-| 🧩    | The software uses ActivityPub, a decentralized social networking protocol. |
-| 🤖    | Android Only. |
-
-[Back to top 🔝](#contents)
+[Back to top](#contents)

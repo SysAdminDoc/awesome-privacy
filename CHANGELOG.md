@@ -6,6 +6,7 @@
 - Documented local README and issue-template validation commands, including transient link-check handling.
 - Replaced the free-form service proposal template with a required-evidence Issue Form.
 - Added listing criteria, ownership boundaries, stale-project review rules, and human link-check triage guidance.
+- Added threat-model notes, trust-boundary markers, and accessible text alternatives for README badges and icons.
 
 ## Roadmap archive — 2026-08-10 — ROADMAP.md
 
