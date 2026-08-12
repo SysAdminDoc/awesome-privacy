@@ -5,6 +5,7 @@
 - Pinned the documented local README validation tools to reviewed package versions without adding CI.
 - Added a high-risk entry metadata convention and populated representative entries with source, license, platform, deployment, account, and caution fields.
 - Rebuilt the README contents from the current heading hierarchy and renamed ambiguous duplicate anchors for platform, client, and deployment subsections.
+- Added migration notes for cloud storage, mail, maps, media, notes, office, passwords, payments, search, social, VPN, browser, and AI workflows.
 
 ## 2026-08-11
 

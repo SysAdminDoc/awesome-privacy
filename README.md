@@ -330,6 +330,8 @@ It allows users to easily create and browse group of apps and it displays notifi
 
 > **Threat model:** Protect prompts, files, and identifiers from the AI provider and its partners. Local models reduce provider exposure but still require trusted devices, models, and dependencies; hosted services can retain metadata or content and are not anonymous by default.
 
+> **Migration:** Export conversations, files, and API keys before closing a cloud account; verify that local models or compatible APIs preserve the workflow without sending prompts to a hosted provider. Model quality, hardware needs, and output compatibility may change.
+
 When using cloud-based AI services, the data you input is often collected and stored by the service provider. This may include not only the content of your requests but also metadata, such as timestamps or IP addresses. Third-party servers may grant access to your data to their employees, partners, or even other users, depending on their privacy policies. Data may be used for various purposes, including model training, research, or even marketing activities. Your requests to a third-party AI service may be tied to your user information and payment details, linking your data to your identity. 
 
 ### ChatGPT
@@ -463,6 +465,8 @@ Google captchas use cookies to track users and rank their IPs.
 > **Metadata:** Use the high-risk entry format above; distinguish local encryption tools, self-hosted servers, and hosted providers.
 
 > **Threat model:** Protect files and metadata from provider access, account takeover, and accidental exposure. Client-side encryption and self-hosting change the trust boundary but do not remove endpoint, key-recovery, sharing, or server-administration risks.
+
+> **Migration:** Export files and shared-link inventories from Google Drive, Dropbox, or OneDrive before deletion; re-encrypt with a local tool or move to a tested server, then verify mobile clients, permissions, backups, storage cost, and account deletion. Self-hosting adds updates and recovery work.
 
 ⛔ **Avoid**
 - **Google Drive** - Google owned, so privacy policy is [very bad](https://tosdr.org/en/service/217). The data is stored in their remote servers where you lose control of it. They use trackers. No encryption available.
@@ -844,6 +848,9 @@ No servers involved. Everything goes directly from one peer to the other peer. N
 [Back to top](#contents)
 
 ## Mail Services
+
+> **Migration:** Move mail and contacts through IMAP or the provider's export tools, recreate aliases, and test delivery before deleting the old account. Self-hosted mail requires DNS, reputation, spam handling, backups, and security updates; addresses and filters may not transfer exactly.
+
 ⛔ **Avoid**
 - Gmail
 - Outlook
@@ -889,6 +896,8 @@ With email aliases, you can finally create a different identity for each website
 
 > **Threat model:** Protect precise location history from map providers, advertising networks, and compromised accounts. Offline maps reduce live-query exposure; routing, search, traffic, and synchronization can still disclose location to a provider or relay.
 
+> **Migration:** Export saved places and location history where the old provider permits it, download offline regions, and test routing/search coverage before removing the old account. Expect differences in traffic, addresses, bookmarks, and live sync; delete location history separately.
+
 ⛔ **Avoid**
 - Google Maps
 - Apple Maps
@@ -908,6 +917,9 @@ With email aliases, you can finally create a different identity for each website
 [Back to top](#contents)
 
 ## Media Streaming Platforms
+
+> **Migration:** Export playlists and subscriptions where supported before cancelling Amazon, Netflix, Spotify, or similar accounts. DRM, catalog licensing, playback clients, and household sharing rarely transfer; self-hosted media requires storage, bandwidth, metadata maintenance, and backups.
+
 ⛔ **Avoid**
 - **Amazon Prime** - [Bad privacy policy](https://tosdr.org/en/service/2444). Apps have [Google trackers](https://reports.exodus-privacy.eu.org/en/reports/com.amazon.amazonvideo.livingroom/latest/). Many permissions are required for a streaming app.
 - **Netflix** - [Bad privacy policy](https://tosdr.org/en/service/185). Apps have [Google trackers](https://reports.exodus-privacy.eu.org/en/reports/com.amazon.amazonvideo.livingroom/latest/). Many permissions are required for a streaming app.
@@ -974,6 +986,8 @@ With email aliases, you can finally create a different identity for each website
 [Back to top](#contents)
 
 ## Notes and Tasks
+
+> **Migration:** Export Google Keep, Evernote, Notion, OneNote, or similar data to Markdown/HTML plus attachments before deleting the account. Check links, reminders, tags, drawings, sharing, and encryption after import; local-first or self-hosted tools trade hosted convenience for sync and backup work.
 ⛔ **Avoid** 
 
 These providers offer apps and services filled with data trackers. Also, most of them store your notes on their servers and do not offer any kind of encryption.
@@ -1026,6 +1040,8 @@ These providers offer apps and services filled with data trackers. Also, most of
 [Back to top](#contents)
 
 ## Office
+
+> **Migration:** Export documents, spreadsheets, comments, and shared permissions from Microsoft or Google formats before closing an account. Test ODF/PDF conversion, formulas, macros, fonts, and collaboration with the target tool; self-hosted collaboration adds server and identity administration.
 
 ⛔ **Avoid**
 - Microsoft Office [![ToS;DR rating](https://shields.tosdr.org/en_244.svg)](https://tosdr.org/en/service/244)
@@ -1140,6 +1156,8 @@ GNU/Linux is a family of free (as in freedom and as in free beer) and open sourc
 
 > **Threat model:** Protect credentials from malware, provider compromise, weak recovery, and accidental sharing. A manager's encryption claims do not protect an unlocked endpoint or a lost recovery factor; verify export, audit, sync, and hosting assumptions before migrating a vault.
 
+> **Migration:** Export an encrypted vault and independently verify passwords, passkeys, attachments, custom fields, URIs, and sharing before deleting the old vault or account. Revoke old sessions and recovery factors only after a tested backup; self-hosted servers require updates, backups, and a recovery plan.
+
 ⛔ **Avoid**
 - LastPass
 - Dashlane
@@ -1177,6 +1195,8 @@ These tools are useful when sharing secrets, code snippets or any other kind of 
 > **Metadata:** Use the high-risk entry format above; state whether identity, account, exchange, or hosted-provider trust is required.
 
 > **Threat model:** Protect transaction history, balances, and identity from merchants, payment processors, exchanges, and account providers. Privacy-preserving payment methods can still expose counterparties, timing, network metadata, or legal obligations; pseudonymity is not anonymity.
+
+> **Migration:** Payment history and identity usually cannot be ported. Withdraw custodial balances, verify wallet seeds and backups, test recipients and fees, and check tax/KYC retention before closing an account; privacy coins do not remove exchange or counterparty compatibility limits.
 
 ⛔ **Avoid**
 - Visa / Mastercard
@@ -1334,6 +1354,8 @@ This section is dedicated to some tools that may help users analyze the privacy 
 
 > **Threat model:** Protect search queries and identifying metadata from the search provider and advertisers. A proxy may shift trust to its operator, while a direct provider may retain queries; check logging, independent indexing, and account requirements rather than assuming “privacy” means anonymity.
 
+> **Migration:** Search has little portable account data: export bookmarks and saved searches, then compare result quality, language coverage, indexing, and safe-search behavior. Delete provider history and account data separately; a self-hosted metasearch proxy adds maintenance and upstream trust.
+
 ⛔ **Avoid**
 - [![ToS;DR rating](https://shields.tosdr.org/en_217.svg)](https://tosdr.org/en/service/217)
 - [![ToS;DR rating](https://shields.tosdr.org/en_309.svg)](https://tosdr.org/en/service/309)
@@ -1357,6 +1379,8 @@ This section is dedicated to some tools that may help users analyze the privacy 
 > **Metadata:** Use the high-risk entry format above; frontends must name upstream and instance/operator trust.
 
 > **Threat model:** Protect identity, social graph, messages, and browsing metadata from platforms and advertisers. A federated service shifts trust to an instance operator; a frontend or client may hide browser details while the upstream platform, proxy, or instance can still observe requests and content.
+
+> **Migration:** Export posts, media, contacts, and followers where a platform supports it before deleting an account. Fediverse actor moves work only when both servers support them; audience, direct messages, algorithms, and moderation history may not transfer, and a frontend is not an account migration.
 
 > [!NOTE]
 > **The fediverse**
@@ -1672,6 +1696,8 @@ Such programs come filled with trackers and telemetry. You can get a full list o
 
 > **Threat model:** A VPN can hide traffic destinations from the local network or ISP while shifting trust to the VPN operator, which can observe connection metadata. It does not prevent browser fingerprinting, logged-in tracking, endpoint compromise, or identity exposure from payment and account records.
 
+> **Migration:** Install the replacement and test DNS, IPv6, kill-switch, local-network, streaming, and speed behavior before cancelling the old VPN. Imported WireGuard/OpenVPN profiles are provider-specific; self-hosting requires a reachable server, key rotation, updates, and an exit-IP trust decision.
+
 ⛔ **Avoid**
 
 - [Free VPNs](https://techcrunch.com/2020/09/24/free-vpn-bad-for-privacy/) from Google Play or any appstore. These services are not free as they will suck your connections' data, keep logs and profile you to [sell your data to advertisers](https://thenextweb.com/news/be-cautious-free-vpns-are-selling-your-data-to-3rd-parties). If a government wants to track someone, such apps will be the first ones to fall.
@@ -1696,6 +1722,8 @@ Here are some open source and truly private (no personal data and/or credit card
 > **Metadata:** Use the high-risk entry format above; state update source, platform, sync/account status, and hardening caveats.
 
 > **Threat model:** Browser hardening can reduce third-party tracking and provider calls, but it cannot make a logged-in session anonymous or protect a compromised device. Privacy depends on defaults, extensions, update provenance, fingerprinting resistance, and the sites or sync providers you use.
+
+> **Migration:** Export bookmarks, passwords, extensions, and settings through an encrypted path, test the import, and remove old synced profiles only after local recovery is confirmed. Expect extension, DRM, profile, and sync compatibility differences; delete browser-account sync data separately.
 
 ⛔ **Avoid**
 
