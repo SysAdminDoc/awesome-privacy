@@ -23,6 +23,7 @@ This fork's canonical repository is [SysAdminDoc/awesome-privacy](https://github
 - [Listing criteria](#listing-criteria)
 - [Review and removal policy](#review-and-removal-policy)
 - [Maintainer validation](#maintainer-validation)
+  - [Link-check triage](#link-check-triage)
 - [2FA](#2fa)
 - [Analytics](#analytics)
 - [Android](#android)
@@ -31,8 +32,8 @@ This fork's canonical repository is [SysAdminDoc/awesome-privacy](https://github
   - [Android Debloat Tools](#android-debloat-tools)
   - [Android Dialer](#android-dialer)
   - [Android File Manager](#android-file-manager)
-  - [Android Gallery](#android-gallery)
   - [Android Keyboard](#android-keyboard)
+  - [Android Gallery](#android-gallery)
   - [Android Launcher](#android-launcher)
 - [Artificial Intelligence](#artificial-intelligence)
   - [ChatGPT](#chatgpt)
@@ -46,49 +47,69 @@ This fork's canonical repository is [SysAdminDoc/awesome-privacy](https://github
 - [Calendar](#calendar)
 - [Commenting Engines](#commenting-engines)
 - [Cloaking](#cloaking)
+  - [Images](#images)
+  - [Text](#text)
 - [Cloud Storage](#cloud-storage)
 - [Creator Tools](#creator-tools)
 - [Databases](#databases)
+- [Developer Tools](#developer-tools)
+  - [IDEs](#ides)
 - [Dating Apps](#dating-apps)
 - [Design Tools](#design-tools)
-- [Developer Tools](#developer-tools)
-    - [IDEs](#ides)
-- [Dictation / ASR](#speech-to-text)
+  - [InDesign](#indesign)
+  - [Photoshop and Illustrator](#photoshop-and-illustrator)
+  - [Figma](#figma)
 - [Domain Registrar](#domain-registrar)
 - [Download Manager](#download-manager)
 - [Encryption](#encryption)
+  - [OS Encryption](#os-encryption)
 - [File Management and Sharing](#file-management-and-sharing)
 - [Fitness and Health](#fitness-and-health)
-	- [Fitness trackers](#fitness-trackers)
-	- [Food](#food)
-	- [Menstrual cycle trackers](#menstrual-cycle-trackers)
-	- [Medical health](#medical-health)
+  - [Fitness trackers](#fitness-trackers)
+  - [Workout planners](#workout-planners)
+  - [Food](#food)
+  - [Menstrual cycle trackers](#menstrual-cycle-trackers)
+  - [Medical health](#medical-health)
 - [Fonts](#fonts)
+  - [Google Fonts Replacements](#google-fonts-replacements)
+  - [Foundries](#foundries)
 - [Forms](#forms)
 - [Games](#games)
-    - [Mario Kart](#mario-kart)
-    - [Minecraft](#minecraft)
-    - [Pokémon](#pokemon)
-    - [Sonic the Hedgehog](#sonic-the-hedgehog)
+  - [Mario Kart](#mario-kart)
+  - [Minecraft](#minecraft)
+  - [Pokemon](#pokemon)
+  - [Sonic the Hedgehog](#sonic-the-hedgehog)
 - [Home Assistants](#home-assistants)
 - [Instant Messaging](#instant-messaging)
+  - [Decentralized messaging](#decentralized-messaging)
+  - [Centralized](#centralized)
+  - [P2P](#p2p)
 - [Link in Bio Tools](#link-in-bio-tools)
 - [Link Shorteners](#link-shorteners)
 - [Location tracking](#location-tracking)
+  - [Tracking](#tracking)
+  - [Find My Device](#find-my-device)
 - [Mail Services](#mail-services)
+  - [Third-Party owned](#third-party-owned)
+  - [Self-hosted mail](#self-hosted-mail)
+  - [Mail clients](#mail-clients)
+  - [Email Alias Services (Anonymous Forwarding)](#email-alias-services-anonymous-forwarding)
 - [Maps and Navigation](#maps-and-navigation)
 - [Media Streaming Platforms](#media-streaming-platforms)
-    - [Video and Audio](#video-and-audio)
-    - [Audio](#audio)
-    - [Podcasts](#podcasts)
-- [Music Recognition (Shazam-like)](#music-recognition)
+  - [Video and Audio](#video-and-audio)
+  - [Audio](#audio)
+  - [Podcasts](#podcasts)
 - [Notes and Tasks](#notes-and-tasks)
+- [Music Recognition](#music-recognition)
 - [Office](#office)
-- [Online Phone Providers (SMS)](#online-phone-providers)
+- [Online Phone Providers](#online-phone-providers)
+  - [No email verification, accepting monero](#no-email-verification-accepting-monero)
+  - [Email verification required, accepting monero](#email-verification-required-accepting-monero)
+  - [Email verification required, accepting crypto](#email-verification-required-accepting-crypto)
 - [Operating Systems](#operating-systems)
   - [Android Operating Systems](#android-operating-systems)
-  - [PC / MacOS](#pc--macos)
   - [Smart TV](#smart-tv)
+  - [PC and macOS](#pc-and-macos)
 - [Password Managers](#password-managers)
 - [Pastebin and Secret Sharing](#pastebin-and-secret-sharing)
 - [Payments](#payments)
@@ -97,38 +118,44 @@ This fork's canonical repository is [SysAdminDoc/awesome-privacy](https://github
   - [Budget Management](#budget-management)
   - [Shared Expenses](#shared-expenses)
   - [Others](#others)
-  - [Portfolio Trackers](#portfolio-trackers)
+  - [Portfolio trackers](#portfolio-trackers)
 - [Photo Editing and Management](#photo-editing-and-management)
 - [Photo Storage](#photo-storage)
+  - [Self-hosted photo storage](#self-hosted-photo-storage)
+  - [Third-party](#third-party)
+  - [Local](#local)
 - [Privacy Tools](#privacy-tools)
+  - [Desktop privacy tools](#desktop-privacy-tools)
+  - [Android privacy tools](#android-privacy-tools)
 - [Remote Access and Control](#remote-access-and-control)
 - [Search Engines](#search-engines)
 - [Social Networks and Platforms](#social-networks-and-platforms)
-    - [Blogging platforms (Medium / Blogger)](#blogging-platforms-medium)
-    - [Imgur](#imgur)
-    - [Instagram](#instagram)
-    - [Quora](#quora)
-    - [LBRY and Odysee](#lbry-and-odysee)
-    - [Reddit](#reddit)
-    - [Streaming Platforms (Twitch)](#streaming-platforms-twitch)
-    - [TikTok](#tiktok)
-    - [Twitter](#twitter)
-    - [Wikipedia](#wikipedia)
-    - [YouTube](#youtube)
-- [Screen Recording](#screen-recording)
+  - [Blogging platforms (Medium)](#blogging-platforms-medium)
+  - [Instagram](#instagram)
+  - [LBRY and Odysee](#lbry-and-odysee)
+  - [Quora](#quora)
+  - [YouTube](#youtube)
+  - [TikTok](#tiktok)
+  - [Twitter](#twitter)
+  - [Reddit](#reddit)
+  - [Streaming Platforms (Twitch)](#streaming-platforms-twitch)
+  - [Wikipedia](#wikipedia)
+  - [Imgur](#imgur)
 - [Teamworking Tools](#teamworking-tools)
+- [Screen recording](#screen-recording)
 - [Translation](#translation)
 - [Uncategorized](#uncategorized)
 - [Utilities](#utilities)
 - [Version Control](#version-control)
 - [Video and Audio Conferencing](#video-and-audio-conferencing)
 - [Video Editing](#video-editing)
-- [Virtual Private Networks (VPNs)](#vpns)
+- [VPNs](#vpns)
 - [Web Browser](#web-browser)
   - [Browser Addons](#browser-addons)
   - [Browser Sync](#browser-sync)
-- [WebView](#webview)
-
+  - [WebView](#webview)
+- [Privacy vs Security vs Anonymity](#privacy-vs-security-vs-anonymity)
+- [Icons](#icons)
 ## Listing criteria
 
 This list is an index, not a security certification. A proposal should have a concrete privacy benefit and enough public evidence for a maintainer to check it. Prefer projects that meet the following criteria:
@@ -516,7 +543,7 @@ Apps such as Tinder collect and sell your personal intimate information. Tinder 
 ✅  **Instead use**
 - [Scribus](https://www.scribus.net/) - a free and open-source desktop publishing (DTP) software available for most desktop operating systems. It is designed for layout, typesetting, and preparation of files for professional-quality image-setting equipment. Scribus can also create animated and interactive PDF presentations and forms.
 
-### Photoshop / Illustrator
+### Photoshop and Illustrator
 
 ✅  **Instead use**
 - [GIMP](https://www.gimp.org/) - A free and open-source raster graphics editor used for image manipulation (retouching) and image editing, free-form drawing, transcoding between different image file formats, and more specialized tasks. It is not designed to be used for drawing, though some artists and creators have used it in this way.
@@ -741,7 +768,7 @@ Interesting articles: [1](https://www.theguardian.com/technology/2019/oct/09/ale
 
 ✅  **Instead use**
 
-### Decentralized
+### Decentralized messaging
 No single point of control or failure. A decentralized network operated by different servers from different volunteers around the globe. You choose where your data stays or you can self-host your own server. Somewhat more complex protocols (because of federation between servers) and some extra metadata is added to the messages (without compromising privacy).
 
 - [Matrix (Protocol)](https://matrix.org/) - An open network for secure, decentralized communication.
@@ -832,19 +859,19 @@ No servers involved. Everything goes directly from one peer to the other peer. N
 - [Riseup](https://riseup.net/en/about-us) - Online communication tools for people and groups working on liberatory social change.
 - [Mailfence](https://mailfence.com) - Secure and private email.
 
-### Self-Hosted
+### Self-hosted mail
 - [Docker mail server](https://github.com/docker-mailserver/docker-mailserver) - A fullstack but simple mail server (SMTP, IMAP, LDAP, Antispam, Antivirus, etc.) using Docker.
 - [Mailcow: dockerized](https://github.com/mailcow/mailcow-dockerized) - The mailserver suite with the 'moo'.
 - [Mail-in-a-box](https://github.com/mail-in-a-box/mailinabox) - Mail-in-a-Box helps individuals take back control of their email by defining a one-click, easy-to-deploy SMTP+everything else server: a mail server in a box.
 - [Mox](https://github.com/mjl-/mox) - Modern full-featured open source secure mail server for low-maintenance self-hosted email.
 
-### Clients
+### Mail clients
 
-#### Android / iOS
+#### Android and iOS mail clients
 - [Android](#icons) [FairEmail](https://github.com/M66B/FairEmail) - Fully featured, open source, privacy friendly email app for Android.
 - [Android](#icons) [K9](https://k9mail.app/) - Open Source Email App for Android.
 
-#### Desktop
+#### Desktop mail clients
 - [Thunderbird](https://www.thunderbird.net) - A free customizable open source email client.
 
 ### Email Alias Services (Anonymous Forwarding)
@@ -1075,13 +1102,13 @@ The following software is not an **Operating System** but comprises apps that ca
 
 You can also check out [Media Streaming Platforms](https://github.com/pluja/awesome-privacy#media-streaming-platforms) section.
 
-### PC / MacOS
+### PC and macOS
 ⛔ **Avoid**
 - MS Windows - Owned by Microsoft it is known for collecting many user data and tricking users to own a Microsoft account. If you still want and happen to use Windows 10, you can use [this tool](https://github.com/builtbybel/privatezilla), or [this other tool](https://www.w10privacy.de/english-home/) to see and disable the tons of privacy-invasive settings of MS Windows.
 - MacOS.
 
 ✅ **Instead use**
-#### [GNU/Linux](https://www.linux.com/what-is-linux/) 
+#### GNU/Linux
 
 GNU/Linux is a family of free (as in freedom and as in free beer) and open source Operating Systems mostly developed by the community. If you don't know where to start these are good options for begginers:
 
@@ -1221,7 +1248,7 @@ These tools are useful when sharing secrets, code snippets or any other kind of 
 #### Web
 - [miniPaint](https://github.com/viliusle/miniPaint) - Open Source alternative to Photopea. miniPaint operates directly in the browser. Nothing will be sent to any server. Everything stays in your browser.
 
-#### Desktop
+#### Desktop photo editors
 - [GIMP](https://www.gimp.org/) - The Free & Open Source Image Editor.
 - [Krita](https://github.com/KDE/krita) - Krita is a free and open source digital painting application
 - [Czkawka](https://github.com/qarmin/czkawka) - Multi functional app to find duplicates and similar images etc.
@@ -1230,7 +1257,7 @@ These tools are useful when sharing secrets, code snippets or any other kind of 
 - [ImageGlass](https://imageglass.org/) - ImageGlass is a lightweight software application whose purpose is to help you view images in a clean and intuitive working environment.
 - [darktable](https://www.darktable.org/) - darktable is an open source photography workflow application and raw developer
 
-#### Android
+#### Android photo editors
 - [Pocket Paint](https://github.com/Catrobat/Paintroid) - The standard image manipulation app for Catroid.
 - [Scrambled Exif](https://gitlab.com/juanitobananas/scrambled-exif) - Remove Exif data from pictures before sharing them.
 - [ImagePipe](https://codeberg.org/Starfish/Imagepipe) - Reduces image size and removes exif-tags when sharing images on android devices.
@@ -1245,7 +1272,7 @@ These tools are useful when sharing secrets, code snippets or any other kind of 
 
 ✅  **Instead use**
 
-### Self-hosted
+### Self-hosted photo storage
 - [Immich](https://github.com/immich-app/immich) - Self-hosted photo and video backup solution directly from your mobile phone.
 - [LibrePhotos](https://github.com/LibrePhotos/librephotos) - Active [OwnPhotos](https://github.com/hooram/ownphotos) fork. Self hosted alternative to Google Photos.
 - [Nextcloud](https://nextcloud.com/) - The open source self-hosted productivity platform that keeps you in control. It has a [*Photos*](https://github.com/nextcloud/photos) plugin to help you organize and visualize your photos.
@@ -1274,12 +1301,12 @@ These tools are useful when sharing secrets, code snippets or any other kind of 
 
 This section is dedicated to some tools that may help users analyze the privacy status on their devices.
 
-### Desktop
+### Desktop privacy tools
 
 - [Whoami Project](https://github.com/owerdogan/whoami-project) - Whoami provides enhanced privacy, anonymity for Debian and Arch based linux distributions.
 - [BusKill](https://www.buskill.in/) - BusKill is a Dead Man Switch triggered when a magnetic breakaway is tripped, severing a USB connection.
 
-### Android
+### Android privacy tools
 
 - [εxodus](https://reports.exodus-privacy.eu.org/en/) - The privacy audit platform for Android applications. Find how many trackers your apps have.
 	- [ClassyShark3xodus](https://f-droid.org/en/packages/com.oF2pks.classyshark3xodus/) - Checks apk(s) for known trackers (provided by Exodus) +other warnings and specs. 
@@ -1434,11 +1461,11 @@ Odysee website contains some trackers and is a heavy site. You can use these alt
 
 ⛔ Avoid using Twitter official app / website. It tracks users and creates user profiles based on what they follow, retweet and like. Twitter harms and violates user privacy with their policies [by default](https://www.eff.org/deeplinks/2017/05/how-opt-out-twitters-new-privacy-settings). 
 
-#### Self-hosted
+#### Self-hosted Twitter alternatives
 
 - [Memos](https://github.com/usememos/memos) - An open-source, self-hosted memo hub with knowledge management and socialization.
 
-#### Decentralized
+#### Decentralized Twitter alternatives
 
 - [Nostr](https://github.com/nostr-protocol/nostr) - Open protocol that is able to create a censorship-resistant global "social" network. It doesn't rely on any trusted central server, hence it is resilient; it is based on cryptographic keys and signatures, so it is tamperproof; it does not rely on P2P techniques, therefore it works. **Note**: Nostr is a protocol, so it is capable of offering much more than a Twitter alternative.
 
@@ -1678,7 +1705,7 @@ Here are some open source and truly private (no personal data and/or credit card
 
 ✅  **Instead use**
 
-#### Android / iOS
+#### Android / iOS browsers
 - [Brave](https://brave.com/) - Android/iOS. Brave offers a pretty good out-of-the-box set of privacy and tracker protections.
 - [Firefox](https://www.mozilla.org/en-US/firefox/mobile/) - Android/iOS
     - [Android](#icons) [IronFox](https://gitlab.com/ironfox-oss/IronFox) - Mull browser fork. A hardened fork of Firefox for Android, with proprietary blobs removed.
@@ -1686,7 +1713,7 @@ Here are some open source and truly private (no personal data and/or credit card
 - [Tor Browser](https://www.torproject.org/) - iOS/Android. Defend yourself against tracking and surveillance and circumvent censorship.
 - [Cromite](https://www.cromite.org/) - Cromite is a Chromium fork based on Bromite with built-in support for ad blocking and an eye for privacy.
 
-#### Desktop
+#### Desktop browsers
 - [Ungoogled Chromium](https://github.com/ungoogled-software/ungoogled-chromium) - A lightweight approach to removing Google web service dependency. Ungoogled-chromium is Google Chromium, sans dependency on Google web services.
 - [Brave](https://brave.com/) - Brave offers a pretty good out-of-the-box set of privacy and tracker protections.
 - [Firefox](https://www.mozilla.org/en-US/firefox/new/) [Source: public] [License: not verified] [Platform: desktop] [Deployment: local] [Account: optional] [Caution: hardening, extensions, sync, and logged-in sites change the privacy result] - Open Source, independent browser. It needs some [hardening and tweaking](https://anonymousplanet.org/guide.html#firefox-1) to achieve great privacy.
