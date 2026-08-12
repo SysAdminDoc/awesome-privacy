@@ -3,6 +3,7 @@
 ## 2026-08-12
 
 - Pinned the documented local README validation tools to reviewed package versions without adding CI.
+- Added a high-risk entry metadata convention and populated representative entries with source, license, platform, deployment, account, and caution fields.
 
 ## 2026-08-11
 

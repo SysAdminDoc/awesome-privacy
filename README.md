@@ -140,6 +140,8 @@ This list is an index, not a security certification. A proposal should have a co
 - High-risk tools identify their protected asset, likely adversary, and important limitations; privacy, security, and anonymity are not interchangeable.
 - Use text markers such as `[Inactive]`, `[Archived]`, `[Hosted]`, `[Account required]`, or `[Closed source]` when a trade-off changes how a reader should evaluate the recommendation.
 
+For high-risk entries, append this compact metadata pattern: `[Source: public|closed|not verified] [License: SPDX identifier|not verified] [Platform: ...] [Deployment: local|offline|self-hosted|hosted] [Account: none|optional|required|not verified] [Caution: ...]`. `not verified` is an intentional review flag, not a privacy or security rating.
+
 ## Review and removal policy
 
 - Review an entry when its last meaningful release or commit is more than 12 months old. Mark it `[Inactive]` when there is no current maintainer signal, and prefer a verified maintained fork when one exists.
@@ -297,13 +299,15 @@ It allows users to easily create and browse group of apps and it displays notifi
 
 ## Artificial Intelligence
 
+> **Metadata:** Use the high-risk entry format above; model source, license, platform, deployment, account, and provider limits vary by project.
+
 > **Threat model:** Protect prompts, files, and identifiers from the AI provider and its partners. Local models reduce provider exposure but still require trusted devices, models, and dependencies; hosted services can retain metadata or content and are not anonymous by default.
 
 When using cloud-based AI services, the data you input is often collected and stored by the service provider. This may include not only the content of your requests but also metadata, such as timestamps or IP addresses. Third-party servers may grant access to your data to their employees, partners, or even other users, depending on their privacy policies. Data may be used for various purposes, including model training, research, or even marketing activities. Your requests to a third-party AI service may be tied to your user information and payment details, linking your data to your identity. 
 
 ### ChatGPT
 
-- [Jan](https://github.com/janhq/jan) - Jan is an open source alternative to ChatGPT that runs 100% offline on your computer.
+- [Jan](https://github.com/janhq/jan) [Source: public] [License: not verified] [Platform: desktop] [Deployment: local/offline] [Account: none stated] [Caution: model and dependency choice changes the trust boundary] - Jan is an open source alternative to ChatGPT that runs 100% offline on your computer.
 - [llama.cpp](https://github.com/ggml-org/llama.cpp) - Inference of Facebook's LLaMA model in pure C/C++ so it can run locally on a CPU.
 - [LocalAI](https://github.com/go-skynet/LocalAI) [Self-hosted] - Self-hosted, community-driven simple local OpenAI-compatible API written in go. Can be used as a drop-in replacement for OpenAI, running on CPU with consumer-grade hardware.
 - [ollama](https://github.com/jmorganca/ollama) - Get up and running with Llama 2 and other large language models locally.
@@ -429,6 +433,8 @@ Google captchas use cookies to track users and rank their IPs.
 
 ## Cloud Storage
 
+> **Metadata:** Use the high-risk entry format above; distinguish local encryption tools, self-hosted servers, and hosted providers.
+
 > **Threat model:** Protect files and metadata from provider access, account takeover, and accidental exposure. Client-side encryption and self-hosting change the trust boundary but do not remove endpoint, key-recovery, sharing, or server-administration risks.
 
 ⛔ **Avoid**
@@ -437,7 +443,7 @@ Google captchas use cookies to track users and rank their IPs.
 - **OneDrive** - Microsoft owned, privacy policy is [very bad](https://tosdr.org/en/service/244). The data is stored in their remote servers where you lose control of it. They use trackers. No encryption available.
 
 ✅  **Instead use**
-- [Nextcloud](https://nextcloud.com/) [Self-hosted] - The open source self-hosted productivity platform that keeps you in control.
+- [Nextcloud](https://nextcloud.com/) [Self-hosted] [Source: public] [License: not verified] [Platform: web/mobile/desktop] [Deployment: self-hosted] [Account: required on the chosen server] [Caution: server administration, backups, and installed apps remain trusted] - The open source self-hosted productivity platform that keeps you in control.
 - [Seafile](https://www.seafile.com/en/home/) - High performance file syncing and sharing. It includes a Wiki, WYSIWYG editing and other knowledge management features.
 - [Peergos](https://peergos.org/) - Secure and private space online where you can store, share and view your photos, videos, music and documents. Also includes a calendar, news feed, task lists, chat and email client. Open source and self-hostable.
 - [Proton Drive](https://proton.me/drive) - End-to-end encrypted Swiss vault for your files that protects your data. [Read this article over Climate activist arrest](https://protonmail.com/blog/climate-activist-arrest/).
@@ -595,6 +601,8 @@ on the DMCrypt kernel module.
 
 ## Fitness and Health
 
+> **Metadata:** Use the high-risk entry format above; identify where sensitive health data is stored and which integrations receive it.
+
 > **Threat model:** Protect health, location, and intimate-life data from vendors, advertisers, and unnecessary account providers. Local storage reduces server exposure but does not replace device encryption, backups, or careful sharing; these entries are not medical advice or a security guarantee.
 
 ⛔ Your health is a **very** important piece of your **private data** and you should care **a lot** about it. Also, health related data is among the most coveted. Please don't use apps from Google, Fitbit, Huawei, Xiaomi or any company that seeks the gathering of your personal data.
@@ -611,7 +619,7 @@ If you need an app for **menstrual cycle tracking** please don't use any apps li
 
 ### Workout planners
 
-- [wger](https://wger.de/en/software/features) [Self-hosted] - A free, open source, self-hosted web application that manages your exercises, workouts and nutrition.
+- [wger](https://wger.de/en/software/features) [Self-hosted] [Source: public] [License: not verified] [Platform: web] [Deployment: self-hosted] [Account: not verified] [Caution: hosting and backups are the operator's responsibility] - A free, open source, self-hosted web application that manages your exercises, workouts and nutrition.
 - [workout.lol](https://github.com/Vincenius/workout-lol) - A small web application to create workouts based on your available equipment and the muscles you want to train that you can selfhost.
 
 ### Food
@@ -627,7 +635,7 @@ If you need an app for **menstrual cycle tracking** please don't use any apps li
 - [Poppy](https://poppy.usenostr.org) - Poppy is a private period tracker that runs in the browser. It stores data locally, and can sync and backup through Nostr relays without a Poppy server or account, all encrypted end to end.
 
 ### Medical health
-- [Fasten](https://github.com/fastenhealth/fasten-onprem) [Self-hosted] - Fasten is an open-source, self-hosted, personal/family electronic medical record aggregator, designed to integrate with 1000's of insurances/hospitals/clinics.
+- [Fasten](https://github.com/fastenhealth/fasten-onprem) [Self-hosted] [Source: public] [License: not verified] [Platform: web/self-hosted] [Deployment: self-hosted] [Account: not verified] [Caution: connected insurers, hospitals, and clinics remain data recipients] - Fasten is an open-source, self-hosted, personal/family electronic medical record aggregator, designed to integrate with 1000's of insurances/hospitals/clinics.
 
 [Back to top](#contents)
 
@@ -849,6 +857,8 @@ With email aliases, you can finally create a different identity for each website
 [Back to top](#contents)
 
 ## Maps and Navigation
+
+> **Metadata:** Use the high-risk entry format above; distinguish offline maps from hosted search, routing, traffic, and synchronization.
 
 > **Threat model:** Protect precise location history from map providers, advertising networks, and compromised accounts. Offline maps reduce live-query exposure; routing, search, traffic, and synchronization can still disclose location to a provider or relay.
 
@@ -1099,6 +1109,8 @@ GNU/Linux is a family of free (as in freedom and as in free beer) and open sourc
 
 ## Password Managers
 
+> **Metadata:** Use the high-risk entry format above; state vault storage, sync, recovery, export, and account assumptions.
+
 > **Threat model:** Protect credentials from malware, provider compromise, weak recovery, and accidental sharing. A manager's encryption claims do not protect an unlocked endpoint or a lost recovery factor; verify export, audit, sync, and hosting assumptions before migrating a vault.
 
 ⛔ **Avoid**
@@ -1107,7 +1119,7 @@ GNU/Linux is a family of free (as in freedom and as in free beer) and open sourc
 
 ✅  **Instead use**
 - [AliasVault](https://www.aliasvault.net) - An open source E2EE password & alias manager with a built-in email alias server
-- [Bitwarden](https://bitwarden.com) [Hosted] [Account required] - An open source cloud based password manager.
+- [Bitwarden](https://bitwarden.com) [Hosted] [Account required] [Source: public] [License: not verified] [Platform: cross-platform] [Deployment: hosted] [Account: required] [Caution: server availability and account recovery remain trusted] - An open source cloud based password manager.
   - [vaultwarden](https://github.com/dani-garcia/vaultwarden/) [Self-hosted] - Unofficial Bitwarden compatible self-hosted server, formerly known as bitwarden_rs.
 - [CarryPass](https://carrypass.net) - Zero-knowledge PWA password manager with deterministic generation, encrypted vaults, and team collaboration. ([Source](https://github.com/racz-zoltan/racz-zoltan.github.io)) `MIT`
 - [KeepassXC](https://keepassxc.org/) - Securely store passwords using industry standard encryption, no sync just storage.
@@ -1135,6 +1147,8 @@ These tools are useful when sharing secrets, code snippets or any other kind of 
 
 ## Payments
 
+> **Metadata:** Use the high-risk entry format above; state whether identity, account, exchange, or hosted-provider trust is required.
+
 > **Threat model:** Protect transaction history, balances, and identity from merchants, payment processors, exchanges, and account providers. Privacy-preserving payment methods can still expose counterparties, timing, network metadata, or legal obligations; pseudonymity is not anonymity.
 
 ⛔ **Avoid**
@@ -1145,7 +1159,7 @@ These tools are useful when sharing secrets, code snippets or any other kind of 
 - Bank payments (wire, SEPA, etc)
 
 ✅  **Instead use**
-- [Monero](https://www.getmonero.org/) [No account required] - Monero is cash for a connected world. It's fast, private, untraceable and secure.
+- [Monero](https://www.getmonero.org/) [No account required] [Source: public] [License: not verified] [Platform: cross-platform] [Deployment: local/network] [Account: none for the protocol] [Caution: exchanges, counterparties, wallets, and network metadata can still identify users] - Monero is cash for a connected world. It's fast, private, untraceable and secure.
 - Cash - Use person-to-person payments using physical notes and coins.
 
 > [!WARNING]
@@ -1313,6 +1327,8 @@ This section is dedicated to some tools that may help users analyze the privacy 
 
 ## Social Networks and Platforms
 
+> **Metadata:** Use the high-risk entry format above; frontends must name upstream and instance/operator trust.
+
 > **Threat model:** Protect identity, social graph, messages, and browsing metadata from platforms and advertisers. A federated service shifts trust to an instance operator; a frontend or client may hide browser details while the upstream platform, proxy, or instance can still observe requests and content.
 
 > [!NOTE]
@@ -1373,7 +1389,7 @@ Odysee website contains some trackers and is a heavy site. You can use these alt
 ⛔ Quora's website has ads and trackers that are used to get your data which is then sold/shared to third parties. Their [privacy policy](https://tosdr.org/en/service/314) is bad.
 
 ✅ **Quora alternative frontends (web-based):**
-- [Quetre](https://github.com/zyachel/quetre) [Frontend] [Hosted backend] - Quetre is an alternative front-end to Quora. It enables you to see answers without ads, trackers, and other such bloat; the selected instance remains a trust dependency.
+- [Quetre](https://github.com/zyachel/quetre) [Frontend] [Hosted backend] [Source: public] [License: not verified] [Platform: web] [Deployment: hosted instance or self-hosted] [Account: not verified] [Caution: upstream platform and selected instance remain trust dependencies] - Quetre is an alternative front-end to Quora. It enables you to see answers without ads, trackers, and other such bloat; the selected instance remains a trust dependency.
 
 
 ### YouTube
@@ -1389,7 +1405,7 @@ Odysee website contains some trackers and is a heavy site. You can use these alt
 - [DTube](https://github.com/dtube/dtube) - A full-featured video sharing website, decentralized.
 
 ✅ **YouTube alternative frontends (web-based):**
-- [Invidious](https://github.com/iv-org/invidious) [Frontend] [Hosted backend] - Alternative and privacy respecting YouTube frontend. The selected instance remains a trust dependency.
+- [Invidious](https://github.com/iv-org/invidious) [Frontend] [Hosted backend] [Source: public] [License: not verified] [Platform: web] [Deployment: hosted instance or self-hosted] [Account: not verified] [Caution: upstream platform and selected instance remain trust dependencies] - Alternative and privacy respecting YouTube frontend. The selected instance remains a trust dependency.
 - [Piped](https://github.com/TeamPiped/Piped) [Frontend] [Hosted backend] - An alternative privacy-friendly YouTube frontend which is efficient by design. The selected instance remains a trust dependency.
 - [ViewTube](https://github.com/viewtube/viewtube-vue) [Frontend] [Hosted backend] - ViewTube is an alternative privacy-friendly YouTube frontend written in Vue.js. The selected instance remains a trust dependency.
 - [Youtube-Local](https://github.com/user234683/youtube-local) [Frontend] [Hosted backend] - Browser-based client for watching Youtube anonymously and with greater page performance; the upstream service and selected deployment remain trust dependencies.
@@ -1625,6 +1641,8 @@ Such programs come filled with trackers and telemetry. You can get a full list o
 
 ## VPNs
 
+> **Metadata:** Use the high-risk entry format above; identify the provider, platform coverage, account/payment requirements, and connection-metadata limit.
+
 > **Threat model:** A VPN can hide traffic destinations from the local network or ISP while shifting trust to the VPN operator, which can observe connection metadata. It does not prevent browser fingerprinting, logged-in tracking, endpoint compromise, or identity exposure from payment and account records.
 
 ⛔ **Avoid**
@@ -1640,13 +1658,15 @@ Here are some open source and truly private (no personal data and/or credit card
 
 - [IVPN](https://ivpn.net) [Hosted]
 - [LNVPN](https://lnvpn.net) [Hosted]
-- [Mullvad VPN](https://mullvad.net) [Hosted]
+- [Mullvad VPN](https://mullvad.net) [Hosted] [Source: public] [License: not verified] [Platform: cross-platform] [Deployment: hosted] [Account: not verified] [Caution: the VPN operator can observe connection metadata]
 - [Proton VPN](https://protonvpn.com) [Hosted]
 - [SPN](https://safing.io/) [Hosted]
 
 [Back to top](#contents)
 
 ## Web Browser
+
+> **Metadata:** Use the high-risk entry format above; state update source, platform, sync/account status, and hardening caveats.
 
 > **Threat model:** Browser hardening can reduce third-party tracking and provider calls, but it cannot make a logged-in session anonymous or protect a compromised device. Privacy depends on defaults, extensions, update provenance, fingerprinting resistance, and the sites or sync providers you use.
 
@@ -1669,7 +1689,7 @@ Here are some open source and truly private (no personal data and/or credit card
 #### Desktop
 - [Ungoogled Chromium](https://github.com/ungoogled-software/ungoogled-chromium) - A lightweight approach to removing Google web service dependency. Ungoogled-chromium is Google Chromium, sans dependency on Google web services.
 - [Brave](https://brave.com/) - Brave offers a pretty good out-of-the-box set of privacy and tracker protections.
-- [Firefox](https://www.mozilla.org/en-US/firefox/new/) - Open Source, independent browser. It needs some [hardening and tweaking](https://anonymousplanet.org/guide.html#firefox-1) to achieve great privacy.
+- [Firefox](https://www.mozilla.org/en-US/firefox/new/) [Source: public] [License: not verified] [Platform: desktop] [Deployment: local] [Account: optional] [Caution: hardening, extensions, sync, and logged-in sites change the privacy result] - Open Source, independent browser. It needs some [hardening and tweaking](https://anonymousplanet.org/guide.html#firefox-1) to achieve great privacy.
   - [LibreWolf](https://librewolf.net/) - Privacy-focused Firefox fork.
 - [Tor Browser](https://www.torproject.org/)
 - [Mullvad Browser](https://mullvad.net/en/browser/) - Browser with the privacy and security implications of the Tor Browser, without the use of the Tor network.
