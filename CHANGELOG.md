@@ -5,6 +5,7 @@
 - Repaired README navigation for moved AI speech content, Android subsections, finance headings, VPNs, and WebView.
 - Documented local README and issue-template validation commands, including transient link-check handling.
 - Replaced the free-form service proposal template with a required-evidence Issue Form.
+- Added listing criteria, ownership boundaries, stale-project review rules, and human link-check triage guidance.
 
 ## Roadmap archive — 2026-08-10 — ROADMAP.md
 

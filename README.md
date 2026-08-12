@@ -1,36 +1,27 @@
 # Awesome Privacy
-<p align="center"><img width="500" src="misc/logo.png"> </img></p>
+<p align="center"><img width="500" src="misc/logo.png" alt="Awesome Privacy logo"></p>
 <p align="center">
 	<img src="https://awesome.re/badge.svg" alt="Awesome">
-	<a href="https://codeberg.org/pluja/awesome-privacy"><img alt="Mirror" src="https://img.shields.io/badge/Mirror-Codeberg-blue"></img></a>
+	<a href="https://codeberg.org/pluja/awesome-privacy"><img alt="Upstream Codeberg mirror" src="https://img.shields.io/badge/Upstream%20mirror-Codeberg-blue"></a>
 </p>
 <p align="center">List of free, open source and privacy respecting services and alternatives to privative services.</p>
 <p align="center">
-	<a href="https://github.com/pluja/awesome-privacy/blob/main/misc/ABOUT.md"> About </a> | 
-	<a href="https://github.com/pluja/awesome-privacy/blob/main/misc/Contributing.md"> Contributing </a> | 
-	<a href="https://github.com/pluja/awesome-privacy/blob/main/misc/QUOTES.md"> Quotes </a> | 
-	<a href="https://github.com/pluja/awesome-privacy/discussions"> Discussions </a>
+	<a href="misc/ABOUT.md"> About </a> |
+	<a href="misc/Contributing.md"> Contributing </a> |
+	<a href="misc/QUOTES.md"> Quotes </a> |
+	<a href="https://github.com/SysAdminDoc/awesome-privacy/discussions"> Discussions </a>
 </p>
+
+This fork's canonical repository is [SysAdminDoc/awesome-privacy](https://github.com/SysAdminDoc/awesome-privacy). It is maintained on `main` and does not automatically sync changes with the upstream [pluja/awesome-privacy](https://github.com/pluja/awesome-privacy). The upstream Codeberg mirror belongs to pluja; if GitHub is unavailable, recover the canonical source from the [raw README](https://raw.githubusercontent.com/SysAdminDoc/awesome-privacy/main/README.md).
 
 > [!IMPORTANT]
 > Anonymity, Privacy, and Security are often used interchangeably, but they actually represent distinct concepts. It is important to understand the differences between them. [Read more in this section below](#privacy-vs-security-vs-anonymity).
 > 
 > The primary focus of this list is to provide alternatives that prioritize privacy. These alternatives give you control over your data and do not collect or sell it.
 
-## Maintainer validation
-
-This repository is a static curated list, so validation is local and documentation-focused. From the repository root, run these checks before submitting README or issue-template changes:
-
-```sh
-git diff --check
-npx --yes awesome-lint README.md
-npx --yes markdownlint-cli2 README.md
-npx --yes markdown-link-check README.md --quiet
-```
-
-There is no runtime, package-manager test suite, or build step for this repository. A link-check failure is a review signal, not an automatic removal decision: retry status 0, 403, 429, and 5xx responses; replace confirmed 404/410 links with a canonical or archived source; and remove a listing only after the project or service is confirmed unavailable. Internal anchor failures should be fixed immediately.
-
 ## Contents
+- [Listing criteria](#listing-criteria)
+- [Review and removal policy](#review-and-removal-policy)
 - [Maintainer validation](#maintainer-validation)
 - [2FA](#2fa)
 - [Analytics](#analytics)
@@ -136,7 +127,46 @@ There is no runtime, package-manager test suite, or build step for this reposito
 - [Web Browser](#web-browser)
   - [Browser Addons](#browser-addons)
   - [Browser Sync](#browser-sync)
-  - [WebView](#webview)
+- [WebView](#webview)
+
+## Listing criteria
+
+This list is an index, not a security certification. A proposal should have a concrete privacy benefit and enough public evidence for a maintainer to check it. Prefer projects that meet the following criteria:
+
+- Source code and a clear license are available; a closed-source exception needs a documented trust history and transparent privacy policy.
+- Data collection, retention, sharing, trackers, telemetry, account/phone/payment/identity requirements, and hosted backends are stated rather than implied.
+- The project is maintained enough for its risk: recent releases or commits, an active support path, and a visible security response process where relevant.
+- The entry explains platform, offline, local, and self-hosted options and names material compatibility or migration limits.
+- High-risk tools identify their protected asset, likely adversary, and important limitations; privacy, security, and anonymity are not interchangeable.
+- Use text markers such as `[Inactive]`, `[Archived]`, `[Hosted]`, `[Account required]`, or `[Closed source]` when a trade-off changes how a reader should evaluate the recommendation.
+
+## Review and removal policy
+
+- Review an entry when its last meaningful release or commit is more than 12 months old. Mark it `[Inactive]` when there is no current maintainer signal, and prefer a verified maintained fork when one exists.
+- Mark a project `[Archived]` when its canonical repository is archived or its maintainers announce discontinuation. Do not present an archived project as an actively maintained default.
+- For security-sensitive tools, current maintenance and a credible security response path are required; otherwise add a limitation marker or remove the entry after review.
+- When a domain or repository fails, check the canonical domain, source repository, maintained forks, and an archive before changing the listing. Remove it only after the service is confirmed unavailable or unsuitable, not because of one transient HTTP result.
+- Record disputed, stale, or removal decisions in an issue or pull request with the evidence and a re-review date. A lack of activity alone is a review trigger, not an automatic deletion.
+
+## Maintainer validation
+
+This repository is a static curated list, so validation is local and documentation-focused. From the repository root, run these checks before submitting README or issue-template changes:
+
+```sh
+git diff --check
+npx --yes awesome-lint README.md
+npx --yes markdownlint-cli2 README.md
+npx --yes markdown-link-check README.md --quiet
+```
+
+There is no runtime, package-manager test suite, or build step for this repository.
+
+### Link-check triage
+
+1. Retry status 0, 403, 429, and 5xx responses from a second network or browser before changing a listing; these results can be transient or bot-blocked.
+2. For 404/410 responses, check the official domain, canonical repository, maintained fork, and an archive. Update the link when an authoritative replacement exists.
+3. Remove an entry only when the service is confirmed unavailable or no longer meets the listing criteria after review. Never remove it solely because an automated checker failed once.
+4. Fix internal anchor failures immediately because they are repository defects. External link checks remain review signals until a human confirms the result.
 
 ## 2FA
 ⛔ Avoid using apps that won't let you export your keys **easily**.
