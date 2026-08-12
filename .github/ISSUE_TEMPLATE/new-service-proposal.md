@@ -7,6 +7,8 @@ assignees: ''
 
 ---
 
+<!-- Maintainers: after applying an accepted proposal, run the local checks documented in ../../README.md#maintainer-validation. -->
+
 ### Service Name
 <!--- Replace what's between "<" and ">" --->
 * [Service Name](https://service.site/) - Short service description.

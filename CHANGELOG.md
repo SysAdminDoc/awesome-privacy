@@ -3,6 +3,7 @@
 ## 2026-08-11
 
 - Repaired README navigation for moved AI speech content, Android subsections, finance headings, VPNs, and WebView.
+- Documented local README and issue-template validation commands, including transient link-check handling.
 
 ## Roadmap archive — 2026-08-10 — ROADMAP.md
 

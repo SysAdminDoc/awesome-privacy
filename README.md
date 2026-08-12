@@ -17,7 +17,21 @@
 > 
 > The primary focus of this list is to provide alternatives that prioritize privacy. These alternatives give you control over your data and do not collect or sell it.
 
+## Maintainer validation
+
+This repository is a static curated list, so validation is local and documentation-focused. From the repository root, run these checks before submitting README or issue-template changes:
+
+```sh
+git diff --check
+npx --yes awesome-lint README.md
+npx --yes markdownlint-cli2 README.md .github/ISSUE_TEMPLATE/new-service-proposal.md
+npx --yes markdown-link-check README.md --quiet
+```
+
+There is no runtime, package-manager test suite, or build step for this repository. A link-check failure is a review signal, not an automatic removal decision: retry status 0, 403, 429, and 5xx responses; replace confirmed 404/410 links with a canonical or archived source; and remove a listing only after the project or service is confirmed unavailable. Internal anchor failures should be fixed immediately.
+
 ## Contents
+- [Maintainer validation](#maintainer-validation)
 - [2FA](#2fa)
 - [Analytics](#analytics)
 - [Android](#android)
