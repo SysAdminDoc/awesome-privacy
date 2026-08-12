@@ -24,7 +24,7 @@ This repository is a static curated list, so validation is local and documentati
 ```sh
 git diff --check
 npx --yes awesome-lint README.md
-npx --yes markdownlint-cli2 README.md .github/ISSUE_TEMPLATE/new-service-proposal.md
+npx --yes markdownlint-cli2 README.md
 npx --yes markdown-link-check README.md --quiet
 ```
 

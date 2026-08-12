@@ -1,0 +1,176 @@
+name: New Service / Section
+description: Suggest a service or section with the evidence maintainers need to review it.
+title: "Add [Service Name]/[Section Name]"
+labels: []
+assignees: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Complete every field with a concrete answer. Use `N/A` only when a field genuinely does not apply, and explain why. Proposals without verifiable evidence may be closed or returned for clarification.
+
+  - type: checkboxes
+    id: submission-checks
+    attributes:
+      label: Before submitting
+      description: These checks prevent duplicate or promotional submissions.
+      options:
+        - label: I searched the README and open issues for an existing entry or proposal.
+          required: true
+        - label: This is an independent recommendation, not a request for paid placement or ranking.
+          required: true
+
+  - type: dropdown
+    id: proposal-type
+    attributes:
+      label: Proposal type
+      options:
+        - Service or application
+        - Section or category
+      multiple: false
+    validations:
+      required: true
+
+  - type: input
+    id: service-name
+    attributes:
+      label: Service or section name
+      placeholder: Name shown to readers
+    validations:
+      required: true
+
+  - type: input
+    id: official-url
+    attributes:
+      label: Official website or project URL
+      description: Use the canonical page users should visit.
+      placeholder: https://example.org/
+    validations:
+      required: true
+
+  - type: input
+    id: source-repository
+    attributes:
+      label: Source repository URL
+      description: Link the source repository, or enter N/A and explain why the project is closed source in the supporting evidence field.
+      placeholder: https://github.com/owner/project or N/A
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: One-line description
+      description: Describe what the project does without marketing language.
+      placeholder: A short, factual description.
+    validations:
+      required: true
+
+  - type: input
+    id: license
+    attributes:
+      label: License
+      description: Provide the SPDX identifier or a link to the license; use N/A only with an explanation.
+      placeholder: MIT, Apache-2.0, CC0-1.0, or N/A
+    validations:
+      required: true
+
+  - type: input
+    id: privacy-policy
+    attributes:
+      label: Privacy policy URL
+      description: Link the current privacy policy or enter N/A and explain how the data practices were verified.
+      placeholder: https://example.org/privacy or N/A
+    validations:
+      required: true
+
+  - type: textarea
+    id: data-practices
+    attributes:
+      label: Data collected and handling
+      description: State what data is collected, retained, shared, sold, or processed locally. Link evidence where possible.
+      placeholder: Include account data, content, metadata, logs, analytics, and third-party processing.
+    validations:
+      required: true
+
+  - type: textarea
+    id: trackers-telemetry
+    attributes:
+      label: Trackers and telemetry
+      description: Identify trackers, ads, analytics, crash reporting, telemetry, or non-free dependencies/network services.
+      placeholder: Name each tracker or state how its absence was checked.
+    validations:
+      required: true
+
+  - type: textarea
+    id: identity-requirements
+    attributes:
+      label: Account, phone, payment, and identity requirements
+      description: Explain whether use requires an account, email, phone number, payment card, government ID, or KYC.
+      placeholder: State what is required for signup and for the main privacy-preserving workflow.
+    validations:
+      required: true
+
+  - type: textarea
+    id: platform-and-deployment
+    attributes:
+      label: Platforms, offline mode, and self-hosting
+      description: List supported platforms and whether the core workflow works offline, locally, or self-hosted.
+      placeholder: Include mobile/desktop/web support and any required hosted backend.
+    validations:
+      required: true
+
+  - type: textarea
+    id: maintenance
+    attributes:
+      label: Maintenance and security history
+      description: Give the latest release or commit date, current issue activity, supported versions, and any known security response process.
+      placeholder: Link release notes, repository activity, advisories, audits, or explain what was checked.
+    validations:
+      required: true
+
+  - type: textarea
+    id: section-fit
+    attributes:
+      label: Proposed section and fit
+      description: Name the README section and explain why the project belongs there rather than in an existing category.
+      placeholder: Section name plus a concise fit rationale.
+    validations:
+      required: true
+
+  - type: textarea
+    id: privacy-rationale
+    attributes:
+      label: Privacy benefit and threat model
+      description: Identify the protected asset, likely adversary, and concrete privacy improvement. State important limits; inclusion is not a security guarantee.
+      placeholder: Who benefits, from what, and under which assumptions?
+    validations:
+      required: true
+
+  - type: textarea
+    id: supporting-evidence
+    attributes:
+      label: Supporting evidence
+      description: Provide independent reviews, documentation, source files, audits, issue links, or comparison evidence. Do not rely on screenshots alone.
+      placeholder: One URL per line with a short note about what it verifies.
+    validations:
+      required: true
+
+  - type: textarea
+    id: affiliation
+    attributes:
+      label: Affiliation and conflicts
+      description: Disclose whether you maintain, fund, sell, represent, or are otherwise affiliated with this project. Disclose paid or referral relationships.
+      placeholder: State None if there is no affiliation or conflict.
+    validations:
+      required: true
+
+  - type: textarea
+    id: limitations
+    attributes:
+      label: Known limitations and alternatives
+      description: List material trade-offs, missing features, trust dependencies, and the proprietary service or workflow this could replace.
+      placeholder: Include migration constraints and a comparable alternative if one exists.
+    validations:
+      required: true
+
