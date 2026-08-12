@@ -1,5 +1,9 @@
 # Changelog
 
+## 2026-08-12
+
+- Pinned the documented local README validation tools to reviewed package versions without adding CI.
+
 ## 2026-08-11
 
 - Repaired README navigation for moved AI speech content, Android subsections, finance headings, VPNs, and WebView.

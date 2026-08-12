@@ -150,13 +150,13 @@ This list is an index, not a security certification. A proposal should have a co
 
 ## Maintainer validation
 
-This repository is a static curated list, so validation is local and documentation-focused. From the repository root, run these checks before submitting README or issue-template changes:
+This repository is a static curated list, so validation is local and documentation-focused. The commands below use the tool versions reviewed on 2026-08-12; exact package versions prevent `npx` from silently selecting a newer release. From the repository root, run them in PowerShell or a POSIX shell before submitting README or issue-template changes (`npx.cmd` can be used instead of `npx` in PowerShell when required by local policy):
 
 ```sh
 git diff --check
-npx --yes awesome-lint README.md
-npx --yes markdownlint-cli2 README.md
-npx --yes markdown-link-check README.md --quiet
+npx --yes awesome-lint@2.3.0 README.md
+npx --yes markdownlint-cli2@0.23.2 README.md
+npx --yes markdown-link-check@3.15.0 README.md --quiet
 ```
 
 There is no runtime, package-manager test suite, or build step for this repository.
